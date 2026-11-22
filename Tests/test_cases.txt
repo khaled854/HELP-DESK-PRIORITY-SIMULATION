@@ -1,0 +1,1022 @@
+CS212 - Data Structures Project
+Help Desk Priority Simulation - Test Cases
+
+========================================
+TEST PLAN
+========================================
+
+Test cases are divided into 8 categories to ensure comprehensive coverage:
+1. Stack Operations
+2. Queue Operations
+3. Linked List Operations
+4. BST Operations
+5. Integration Tests
+6. Edge Cases
+7. Search Algorithm Tests
+8. Sort Algorithm Tests
+
+========================================
+TEST 1: STACK OPERATIONS (Escalations)
+========================================
+
+Test 1.1: Push Operation
+-----------------------
+Input: 
+  - Push escalation: RequestID=1001, Agent="Ahmed", Reason="Complex issue", Priority=4
+  - Push escalation: RequestID=1002, Agent="Sara", Reason="Technical problem", Priority=3
+  - Push escalation: RequestID=1003, Agent="Omar", Reason="Urgent matter", Priority=4
+
+Expected Output:
+  - All three escalations added successfully
+  - Stack size = 3
+  - Top element is RequestID=1003 (last pushed)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+Reason: [If failed, explain why]
+
+---
+
+Test 1.2: Pop Operation (LIFO Verification)
+-------------------------------------------
+Input:
+  - Pop from stack (after Test 1.1)
+  
+Expected Output:
+  - Returns RequestID=1003 (last in, first out)
+  - Stack size = 2
+  - New top is RequestID=1002
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 1.3: Peek Operation
+------------------------
+Input:
+  - Peek at top (after Test 1.2)
+
+Expected Output:
+  - Returns RequestID=1002
+  - Stack size remains 2 (no removal)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 1.4: isEmpty Test (Empty Stack)
+------------------------------------
+Input:
+  - Create new empty stack
+  - Call isEmpty()
+
+Expected Output:
+  - Returns true
+  - Size = 0
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 1.5: isFull Test
+---------------------
+Input:
+  - Push 100 escalations (MAX_SIZE)
+  - Call isFull()
+  - Try to push one more
+
+Expected Output:
+  - isFull() returns true
+  - Push of 101st element fails
+  - Error message displayed
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 1.6: Display All Escalations
+----------------------------------
+Input:
+  - Stack with 5 escalations
+  - Call display()
+
+Expected Output:
+  - Shows all 5 escalations from top to bottom
+  - Each with complete information
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 2: QUEUE OPERATIONS (Priority Queue)
+========================================
+
+Test 2.1: Enqueue Operation
+---------------------------
+Input:
+  - Enqueue Request: ID=2001, Priority=2 (Medium)
+  - Enqueue Request: ID=2002, Priority=4 (Critical)
+  - Enqueue Request: ID=2003, Priority=1 (Low)
+  - Enqueue Request: ID=2004, Priority=3 (High)
+
+Expected Output:
+  - All requests added
+  - Queue size = 4
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 2.2: Dequeue (Priority Order)
+----------------------------------
+Input:
+  - Dequeue from queue (after Test 2.1)
+
+Expected Output:
+  - Returns ID=2002 (Priority=4, highest)
+  - Queue size = 3
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 2.3: Dequeue (FIFO for Same Priority)
+-------------------------------------------
+Input:
+  - Enqueue: ID=3001, Priority=3
+  - Enqueue: ID=3002, Priority=3
+  - Enqueue: ID=3003, Priority=3
+  - Dequeue 3 times
+
+Expected Output:
+  - First dequeue returns ID=3001
+  - Second dequeue returns ID=3002
+  - Third dequeue returns ID=3003
+  (FIFO order for same priority)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 2.4: isEmpty Test
+----------------------
+Input:
+  - Empty queue
+  - Call isEmpty()
+
+Expected Output:
+  - Returns true
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 2.5: isFull Test
+---------------------
+Input:
+  - Enqueue 100 requests
+  - Call isFull()
+  - Try to enqueue one more
+
+Expected Output:
+  - isFull() returns true
+  - Enqueue fails with error message
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 2.6: Display Queue
+-----------------------
+Input:
+  - Queue with requests of different priorities
+  - Call display()
+
+Expected Output:
+  - Shows all requests
+  - Indicates priority levels clearly
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 3: LINKED LIST OPERATIONS (Agents)
+========================================
+
+Test 3.1: Insert Agent (Beginning)
+----------------------------------
+Input:
+  - Insert Agent: ID=101, Name="Ahmed Ali"
+
+Expected Output:
+  - Agent added successfully
+  - List size = 1
+  - Agent is head
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.2: Insert Multiple Agents
+---------------------------------
+Input:
+  - Insert Agent: ID=101, Name="Ahmed Ali"
+  - Insert Agent: ID=102, Name="Sara Mohamed"
+  - Insert Agent: ID=103, Name="Omar Hassan"
+
+Expected Output:
+  - All agents added
+  - List size = 3
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.3: Search Agent (Found)
+-------------------------------
+Input:
+  - Search for Agent ID=102
+
+Expected Output:
+  - Returns node with Sara Mohamed
+  - Displays agent information
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.4: Search Agent (Not Found)
+-----------------------------------
+Input:
+  - Search for Agent ID=999
+
+Expected Output:
+  - Returns NULL
+  - Displays "Agent not found"
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.5: Delete Agent (Head)
+------------------------------
+Input:
+  - Delete Agent ID=101 (first node)
+
+Expected Output:
+  - Agent removed
+  - List size decremented
+  - New head is ID=102
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.6: Delete Agent (Middle)
+--------------------------------
+Input:
+  - List: 101 → 102 → 103
+  - Delete ID=102
+
+Expected Output:
+  - Agent removed
+  - List: 101 → 103
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.7: Delete Agent (End)
+-----------------------------
+Input:
+  - List: 101 → 102 → 103
+  - Delete ID=103
+
+Expected Output:
+  - Agent removed
+  - List: 101 → 102
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.8: Update Agent
+----------------------
+Input:
+  - Update Agent ID=101, new email="newemail@test.com"
+
+Expected Output:
+  - Email updated successfully
+  - Other fields unchanged
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.9: Assign Request to Agent
+----------------------------------
+Input:
+  - Assign request to Agent ID=101
+  - assignedRequests increments
+
+Expected Output:
+  - assignedRequests = 1
+  - Agent still available (< 5 requests)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.10: Agent Becomes Unavailable
+-------------------------------------
+Input:
+  - Assign 5 requests to Agent ID=101
+
+Expected Output:
+  - assignedRequests = 5
+  - isAvailable = false
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 3.11: Display All Agents
+------------------------------
+Input:
+  - List with 5 agents
+  - Call displayAgents()
+
+Expected Output:
+  - Shows all agents with details
+  - Formatted table
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 4: BST OPERATIONS (Request Lookup)
+========================================
+
+Test 4.1: Insert Requests
+--------------------------
+Input:
+  - Insert: ID=5000
+  - Insert: ID=3000
+  - Insert: ID=7000
+  - Insert: ID=2000
+  - Insert: ID=4000
+
+Expected Output:
+  - All inserted successfully
+  - Tree structure:
+         5000
+        /    \
+      3000   7000
+      /  \
+    2000 4000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.2: Search (Found)
+------------------------
+Input:
+  - Search for ID=4000
+
+Expected Output:
+  - Returns node with request details
+  - Search path: 5000 → 3000 → 4000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.3: Search (Not Found)
+-----------------------------
+Input:
+  - Search for ID=9999
+
+Expected Output:
+  - Returns NULL
+  - Displays "Request not found"
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.4: Delete (Leaf Node - 0 Children)
+------------------------------------------
+Input:
+  - Delete ID=2000 (leaf node)
+
+Expected Output:
+  - Node removed
+  - Parent's left child = NULL
+  - Tree count decremented
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.5: Delete (Node with 1 Child)
+-------------------------------------
+Input:
+  - Tree: 5000, 3000, 7000, 8000
+  - Delete ID=7000 (has only right child 8000)
+
+Expected Output:
+  - 7000 removed
+  - 8000 becomes right child of 5000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.6: Delete (Node with 2 Children)
+----------------------------------------
+Input:
+  - Tree from Test 4.1
+  - Delete ID=3000 (has 2 children: 2000, 4000)
+
+Expected Output:
+  - 3000 removed
+  - Replaced by inorder successor (4000)
+  - Tree structure maintained
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.7: Inorder Traversal
+----------------------------
+Input:
+  - Tree with IDs: 5000, 3000, 7000, 2000, 4000, 6000, 8000
+  - Call inorderTraversal()
+
+Expected Output:
+  - Displays in sorted order: 2000, 3000, 4000, 5000, 6000, 7000, 8000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.8: Preorder Traversal
+-----------------------------
+Input:
+  - Same tree as Test 4.7
+  - Call preorderTraversal()
+
+Expected Output:
+  - Displays: 5000, 3000, 2000, 4000, 7000, 6000, 8000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.9: Find Minimum
+----------------------
+Input:
+  - Call findMin()
+
+Expected Output:
+  - Returns node with ID=2000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 4.10: Find Maximum
+-----------------------
+Input:
+  - Call findMax()
+
+Expected Output:
+  - Returns node with ID=8000
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 5: INTEGRATION TESTS
+========================================
+
+Test 5.1: Create Request Flow
+------------------------------
+Input:
+  - Create request using HelpDesk.createRequest()
+
+Expected Output:
+  - Request added to Queue ✓
+  - Request added to BST ✓
+  - Same ID in both structures ✓
+  - Can find in BST using search ✓
+  - Appears in queue display ✓
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 5.2: Process Request Flow
+-------------------------------
+Input:
+  - Create request with Priority=4
+  - Add available agent
+  - Call processNextRequest()
+
+Expected Output:
+  - Request dequeued from queue ✓
+  - Agent found and assigned ✓
+  - Request status updated to "InProgress" in BST ✓
+  - Agent's assignedRequests incremented ✓
+  - Request no longer in queue ✓
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 5.3: Escalation Flow
+--------------------------
+Input:
+  - Create and process request
+  - Escalate the request
+
+Expected Output:
+  - Escalation added to Stack ✓
+  - Request status updated to "Escalated" in BST ✓
+  - Can view in stack display ✓
+  - Original request still in BST ✓
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 5.4: Resolution Flow
+--------------------------
+Input:
+  - Create, process, then resolve request
+
+Expected Output:
+  - Request status updated to "Resolved" in BST ✓
+  - Resolved time set ✓
+  - Agent's assignedRequests decremented ✓
+  - Agent becomes available if < 5 requests ✓
+  - Request still in BST (for history) ✓
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 5.5: Complete Workflow
+----------------------------
+Input:
+  - Add 3 agents
+  - Create 5 requests (different priorities)
+  - Process 3 requests
+  - Escalate 1 request
+  - Resolve 1 request
+
+Expected Output:
+  - 2 requests in queue (unprocessed) ✓
+  - 5 requests in BST (all) ✓
+  - 1 escalation in stack ✓
+  - 3 agents with correct assigned counts ✓
+  - Statistics display correctly ✓
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 6: EDGE CASES
+========================================
+
+Test 6.1: Empty Stack Operations
+---------------------------------
+Input:
+  - pop() on empty stack
+  - peek() on empty stack
+
+Expected Output:
+  - Error messages displayed
+  - Program doesn't crash
+  - Returns safely
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.2: Empty Queue Operations
+---------------------------------
+Input:
+  - dequeue() on empty queue
+  - front() on empty queue
+
+Expected Output:
+  - Error messages displayed
+  - Program doesn't crash
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.3: Empty Linked List Operations
+---------------------------------------
+Input:
+  - delete from empty list
+  - search in empty list
+
+Expected Output:
+  - Appropriate error messages
+  - No crash
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.4: Empty BST Operations
+-------------------------------
+Input:
+  - search in empty tree
+  - delete from empty tree
+
+Expected Output:
+  - Error messages
+  - No crash
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.5: Single Element Operations
+------------------------------------
+Input:
+  - Stack with 1 element - pop it
+  - Queue with 1 element - dequeue it
+  - List with 1 node - delete it
+  - BST with 1 node - delete it
+
+Expected Output:
+  - All structures become empty
+  - isEmpty() returns true
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.6: Duplicate ID Handling
+--------------------------------
+Input:
+  - Insert agent with ID=101
+  - Try to insert another agent with ID=101
+
+Expected Output:
+  - Second insert fails
+  - Error message displayed
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.7: Invalid Input Handling
+---------------------------------
+Input:
+  - Negative request ID
+  - Negative agent ID
+  - Priority < 1 or > 4
+  - Empty customer name
+  - Empty agent name
+
+Expected Output:
+  - Validation catches errors
+  - Appropriate error messages
+  - Prompts for re-entry
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 6.8: Non-existent ID Operations
+-------------------------------------
+Input:
+  - Search for request ID=99999
+  - Delete request ID=99999
+  - Resolve request ID=99999
+
+Expected Output:
+  - "Not found" messages
+  - Operations fail gracefully
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 7: SEARCH ALGORITHMS
+========================================
+
+Test 7.1: BST Search Performance
+---------------------------------
+Input:
+  - BST with 15 requests (balanced)
+  - Search for ID in middle
+
+Expected Output:
+  - Found in ~4 comparisons (log2(15) ≈ 3.9)
+  - O(log n) complexity demonstrated
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 7.2: Linear Search Performance
+------------------------------------
+Input:
+  - Linked list with 15 agents
+  - Search for agent name at end
+
+Expected Output:
+  - Requires 15 comparisons
+  - O(n) complexity demonstrated
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 7.3: Search Comparison
+----------------------------
+Input:
+  - 100 requests in BST
+  - 100 agents in linked list
+  - Search for last element in each
+
+Expected Output:
+  - BST: ~7 comparisons (log2(100) ≈ 6.6)
+  - Linear: 100 comparisons
+  - Clear performance difference
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+TEST 8: SORTING ALGORITHM
+========================================
+
+Test 8.1: Sort by Priority (Small Data)
+----------------------------------------
+Input:
+  - 5 requests with priorities: 2, 4, 1, 3, 2
+  - Call sortRequestsByPriority()
+
+Expected Output:
+  - Sorted order: 4, 3, 2, 2, 1 (descending)
+  - Algorithm: [Bubble/Insertion/Selection Sort]
+  - Comparisons: ~10 (varies by algorithm)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 8.2: Sort Already Sorted Data
+-----------------------------------
+Input:
+  - 5 requests already in priority order
+  - Call sortRequestsByPriority()
+
+Expected Output:
+  - Order unchanged
+  - Best case: O(n) for Bubble/Insertion
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 8.3: Sort Reverse Sorted Data
+-----------------------------------
+Input:
+  - 5 requests in reverse priority order
+  - Call sortRequestsByPriority()
+
+Expected Output:
+  - Sorted correctly
+  - Worst case: O(n²)
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+---
+
+Test 8.4: Sort Large Data
+--------------------------
+Input:
+  - 50 requests with random priorities
+  - Call sortRequestsByPriority()
+
+Expected Output:
+  - All sorted correctly
+  - Time complexity: O(n²)
+  - Number of comparisons logged
+
+Actual Output:
+  [To be filled during testing]
+
+Status: PASS / FAIL
+
+========================================
+SUMMARY
+========================================
+
+Total Tests: [Count all tests above]
+Passed: [Number of PASS]
+Failed: [Number of FAIL]
+
+Critical Issues:
+[List any critical bugs found]
+
+Recommendations:
+[List improvements needed]
+
+Overall Status: PASS / FAIL
+
+Date Tested: _______________
+Tested By: _________________
+
+========================================
+BIG-O COMPLEXITY SUMMARY
+========================================
+
+STACK:
+- Push: O(1)
+- Pop: O(1)
+- Peek: O(1)
+
+QUEUE:
+- Enqueue: O(1) or O(n) depending on implementation
+- Dequeue: O(1) or O(n) for finding highest priority
+- Front: O(1)
+
+LINKED LIST:
+- Insert at head: O(1)
+- Insert at end: O(n)
+- Delete: O(n)
+- Search: O(n)
+
+BST:
+- Insert: O(log n) average, O(n) worst
+- Search: O(log n) average, O(n) worst
+- Delete: O(log n) average, O(n) worst
+- Traversal: O(n)
+
+SORTING:
+- [Your chosen algorithm]: O(n²)
+
+SEARCHING:
+- BST Search: O(log n) average
+- Linear Search: O(n)
+
+========================================

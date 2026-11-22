@@ -1,0 +1,104 @@
+========================================
+CS212 - Data Structures
+Project Submission Template
+========================================
+
+IMPORTANT: Every team member must submit their OWN copy of this file to eLearning!
+
+Course: CS212 - Data Structures
+
+Project Title: Help-Desk Priority Simulation
+
+Project Number: 89
+
+Registered Practical Section: [اكتب رقم الـ Section بتاعكم]
+
+Team ID / Number: [إن وجد]
+
+----------------------------------------
+TEAM MEMBERS (All 6 members):
+----------------------------------------
+
+1. عمر محمد - University ID: [___________]
+2. خالد طه - University ID: [___________]
+3. نور محمد - University ID: [___________]
+4. هبه رجب - University ID: [___________]
+5. مريم علاء - University ID: [___________]
+6. نور وائل - University ID: [___________]
+
+----------------------------------------
+MY INFORMATION (Fill your own info):
+----------------------------------------
+
+Student Name: [اكتب اسمك الكامل]
+
+Student University ID: [اكتب الـ ID بتاعك]
+
+My Role in Project: [Stack / Queue / LinkedList / BST / HelpDesk / Main Menu]
+
+My Files: [اكتب الملفات اللي اشتغلت عليها، مثال: Stack.h, Stack.cpp]
+
+----------------------------------------
+PROJECT REPOSITORY:
+----------------------------------------
+
+GitHub Repository URL: https://github.com/khaled854/HELP-DESK-PRIORITY-SIMULATION
+
+(OR OneDrive Link if using OneDrive instead of GitHub)
+
+----------------------------------------
+VERIFICATION CHECKLIST:
+----------------------------------------
+
+Before submitting, verify the following:
+
+[ ] Repository link works and is accessible
+[ ] All source code files (.h and .cpp) are uploaded
+[ ] README.md file is included with compile instructions
+[ ] Project Report (PDF or DOCX) is uploaded
+[ ] Screenshots folder contains execution screenshots
+[ ] Test cases file shows test results
+[ ] My individual contribution is clearly documented in the report
+[ ] All team members are from the SAME practical section
+[ ] I understand the entire project (not just my part)
+[ ] Code compiles without errors
+[ ] All required data structures are implemented manually (no STL)
+
+----------------------------------------
+DECLARATION:
+----------------------------------------
+
+I declare that:
+1. This work represents my team's original effort
+2. I contributed to and understand all parts of this project
+3. Any external resources used are properly cited in the report
+4. All team members participated meaningfully
+5. I am prepared to discuss and explain any part of the project
+
+Signature: ___________________
+
+Date: ___________________
+
+----------------------------------------
+SUBMISSION INSTRUCTIONS:
+----------------------------------------
+
+1. Save this file as: CS212_HelpDesk_[YourID].txt
+   Example: CS212_HelpDesk_202012345.txt
+
+2. Go to eLearning → CS212 Course → Project Submission
+
+3. Upload YOUR copy of this file (each member uploads separately)
+
+4. Verify your submission was successful
+
+5. Keep a copy for your records
+
+========================================
+DO NOT MODIFY THE REPOSITORY LINK!
+All team members must submit the SAME link
+========================================
+
+For any questions, contact your instructor or TA.
+
+Good luck! 🎓
