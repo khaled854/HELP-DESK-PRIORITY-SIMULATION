@@ -3,253 +3,312 @@
  * Help Desk Priority Simulation
  * 
  * File: HelpDesk.cpp
- * Implementation file for HelpDesk system
- * Complete all function bodies below
+ * Implementation: Main HelpDesk system class
+ * Integrates all data structures
+ * 
+ * SKELETON VERSION - Function bodies are intentionally empty
+ * Team members will implement their assigned functions
  */
 
 #include "HelpDesk.h"
 #include <ctime>
+#include <sstream>
+#include <iomanip>
 
-// Constructor
+// ========================================
+// SECTION: مريم علاء (Coordinator + Helpers)
+// ========================================
+
+/*
+ * Constructor
+ * Owner: Mariam Alaa
+ * Purpose: Initialize help desk system
+ */
 HelpDesk::HelpDesk() {
-    // TODO:
-    // Initialize nextRequestId = 1001
-    // Initialize totalRequests = 0
-    // Initialize resolvedRequests = 0
-    // Initialize escalatedRequests = 0
+    // TODO: Implemented by Mariam Alaa
+    // Initialize nextRequestId, counters
 }
 
-// Destructor
+/*
+ * Destructor
+ * Owner: Mariam Alaa
+ * Purpose: Clean up resources
+ */
 HelpDesk::~HelpDesk() {
-    // TODO:
+    // TODO: Implemented by Mariam Alaa
     // Clean up if needed (data structures have their own destructors)
 }
 
-// Create new service request
-int HelpDesk::createRequest(string customerName, string issueType, 
-                            string description, int priority) {
-    // TODO:
-    // 1. Get current timestamp using getCurrentTimestamp()
-    // 2. Get new request ID using getNextRequestId()
-    // 3. Add request to queue using requestQueue.enqueue()
-    // 4. Add request to BST using requestTree.insert()
-    //    - Set status to "Waiting"
-    //    - Set assignedAgent to "None"
+/*
+ * Function: getCurrentTimestamp
+ * Owner: Mariam Alaa
+ * Purpose: Get current date/time as string
+ */
+string HelpDesk::getCurrentTimestamp() {
+    // TODO: Implemented by Mariam Alaa
+    // Use <ctime> to get current time
+    // Format as string (e.g., "2026-11-24 14:30:00")
+    return "";  // Placeholder
+}
+
+/*
+ * Function: getNextRequestId
+ * Owner: Mariam Alaa
+ * Purpose: Generate next unique ID
+ */
+int HelpDesk::getNextRequestId() {
+    // TODO: Implemented by Mariam Alaa
+    // Increment and return nextRequestId
+    return 0;  // Placeholder
+}
+
+/*
+ * Function: displayStatistics
+ * Owner: Mariam Alaa
+ * Purpose: Show system statistics
+ */
+void HelpDesk::displayStatistics() {
+    // TODO: Implemented by Mariam Alaa
+    // Display:
+    // - Total requests (totalRequests)
+    // - Pending requests (requestQueue.size())
+    // - Resolved requests (resolvedRequests)
+    // - Escalated requests (escalationStack.size())
+    // - Total agents (agentList.getCount())
+}
+
+/*
+ * Function: sortRequestsByPriority
+ * Owner: Mariam Alaa
+ * Purpose: Implement sorting algorithm (R6 requirement)
+ * NOTE: Use Bubble, Insertion, or Selection sort
+ */
+void HelpDesk::sortRequestsByPriority() {
+    // TODO: Implemented by Mariam Alaa
+    // 1. Get all pending requests from queue
+    // 2. Apply sorting algorithm (Bubble/Insertion/Selection)
+    // 3. Display sorted results
+    // 4. Explain Big-O complexity
+}
+
+/*
+ * Function: linearSearchAgent
+ * Owner: Mariam Alaa
+ * Purpose: Search agent by name (R6 requirement)
+ * NOTE: Demonstrates linear search algorithm
+ */
+void HelpDesk::linearSearchAgent(string name) {
+    // TODO: Implemented by Mariam Alaa
+    // 1. Traverse agent list
+    // 2. Compare names (case-insensitive)
+    // 3. Display if found
+    // 4. O(n) complexity
+}
+
+// ========================================
+// SECTION: عمر محمد (Request Creation + Views)
+// ========================================
+
+/*
+ * Function: createRequest
+ * Owner: Omar Mohamed
+ * Purpose: Create new service request
+ * NOTE: Adds to BOTH Queue AND BST (integration!)
+ */
+int HelpDesk::createRequest(string customerName, string issueType,
+                             string description, int priority) {
+    // TODO: Implemented by Omar Mohamed
+    // 1. Get next ID
+    // 2. Get current timestamp
+    // 3. Add to requestQueue (enqueue)
+    // 4. Add to requestTree (insert)
     // 5. Increment totalRequests
-    // 6. Display success message with request ID
-    // 7. Return request ID
+    // 6. Return request ID
+    return 0;  // Placeholder
 }
 
-// Process next request from queue
-bool HelpDesk::processNextRequest() {
-    // TODO:
-    // 1. Check if queue is empty
-    // 2. If empty, display message and return false
-    // 3. Dequeue request from requestQueue
-    // 4. Find available agent with matching specialization
-    //    - Use agentList.findAvailableAgent()
-    // 5. If agent found:
-    //    - Update request status to "InProgress" in BST
-    //    - Assign agent to request
-    //    - Call agentList.assignRequest()
-    //    - Display assignment details
-    // 6. If no agent available:
-    //    - Display "No available agents" message
-    //    - Re-enqueue the request
-    // 7. Return true
-}
-
-// Escalate request
+/*
+ * Function: escalateRequest
+ * Owner: Omar Mohamed
+ * Purpose: Move request to escalation stack
+ */
 bool HelpDesk::escalateRequest(int requestId, string agentName, string reason) {
-    // TODO:
-    // 1. Search for request in BST
-    // 2. If not found, return false
-    // 3. Get request priority from BST node
-    // 4. Get timestamp
-    // 5. Push to escalationStack with details
-    // 6. Update request status to "Escalated" in BST
-    // 7. Increment escalatedRequests
-    // 8. Display escalation confirmation
-    // 9. Return true
+    // TODO: Implemented by Omar Mohamed
+    // 1. Search request in BST
+    // 2. If found, push to escalationStack
+    // 3. Update status in BST
+    // 4. Increment escalatedRequests
+    // 5. Return true if successful
+    return false;  // Placeholder
 }
 
-// Resolve request
-bool HelpDesk::resolveRequest(int requestId) {
-    // TODO:
-    // 1. Search for request in BST
-    // 2. If not found, return false
-    // 3. Get assigned agent name from request
-    // 4. Update request status to "Resolved"
-    // 5. Set resolved time using getCurrentTimestamp()
-    // 6. If agent was assigned, call agentList.unassignRequest()
-    // 7. Increment resolvedRequests
-    // 8. Display resolution confirmation
-    // 9. Return true
-}
-
-// Add new agent
-bool HelpDesk::addAgent(int agentId, string name, string specialization,
-                        string email, string phoneNumber) {
-    // TODO:
-    // 1. Try to insert agent using agentList.insertAgent()
-    // 2. If successful, display confirmation
-    // 3. If failed (duplicate ID), display error
-    // 4. Return result
-}
-
-// Remove agent
-bool HelpDesk::removeAgent(int agentId) {
-    // TODO:
-    // 1. Check if agent has assigned requests
-    // 2. If yes, display warning and ask for confirmation
-    // 3. Try to delete agent using agentList.deleteAgent()
-    // 4. Display result message
-    // 5. Return result
-}
-
-// View specific request
-void HelpDesk::viewRequest(int requestId) {
-    // TODO:
-    // 1. Search in BST using requestTree.search()
-    // 2. If not found, display "Request not found"
-    // 3. If found, display all request details:
-    //    - Request ID
-    //    - Customer Name
-    //    - Issue Type
-    //    - Assigned Agent
-    //    - Status
-    //    - Created Time
-    //    - Resolved Time (if resolved)
-}
-
-// View all requests (sorted by ID)
-void HelpDesk::viewAllRequests() {
-    // TODO:
-    // 1. Check if BST is empty
-    // 2. If empty, display "No requests in system"
-    // 3. Display header
-    // 4. Call requestTree.inorderTraversal()
-}
-
-// View pending requests in queue
-void HelpDesk::viewPendingRequests() {
-    // TODO:
-    // Call requestQueue.display()
-}
-
-// View escalations in stack
+/*
+ * Function: viewEscalations
+ * Owner: Omar Mohamed
+ * Purpose: Display escalated requests
+ */
 void HelpDesk::viewEscalations() {
-    // TODO:
+    // TODO: Implemented by Omar Mohamed
     // Call escalationStack.display()
 }
 
-// View all agents
-void HelpDesk::viewAllAgents() {
-    // TODO:
-    // Call agentList.displayAgents()
+/*
+ * Function: viewPendingRequests
+ * Owner: Omar Mohamed
+ * Purpose: Display pending requests in queue
+ */
+void HelpDesk::viewPendingRequests() {
+    // TODO: Implemented by Omar Mohamed
+    // Call requestQueue.display()
 }
 
-// Display system statistics
-void HelpDesk::displayStatistics() {
-    // TODO:
-    // Calculate and display:
-    // 1. Total requests created (totalRequests)
-    // 2. Requests in queue (requestQueue.size())
-    // 3. Resolved requests (resolvedRequests)
-    // 4. Escalated requests (escalatedRequests)
-    // 5. In-progress requests (calculate from BST or track separately)
-    // 6. Total agents (agentList.getCount())
-    // 7. Available agents (loop through agents and count)
-    // 8. Busy agents (total - available)
-    // 
-    // Display in organized format with labels
+// ========================================
+// SECTION: خالد طه (Request Processing)
+// ========================================
+
+/*
+ * Function: processNextRequest
+ * Owner: Khaled Taha
+ * Purpose: Dequeue and assign to agent
+ */
+bool HelpDesk::processNextRequest() {
+    // TODO: Implemented by Khaled Taha
+    // 1. Check if queue empty
+    // 2. Dequeue highest priority request
+    // 3. Find available agent (agentList.findAvailableAgent)
+    // 4. Assign agent
+    // 5. Update status in BST
+    // 6. Return true if successful
+    return false;  // Placeholder
 }
 
-// Search request by ID (BST search - O(log n))
-bool HelpDesk::searchRequestById(int requestId) {
-    // TODO:
-    // 1. Call requestTree.search(requestId)
-    // 2. If found, display request details
-    // 3. If not found, display "Request not found"
-    // 4. Return true if found, false otherwise
+/*
+ * Function: resolveRequest
+ * Owner: Khaled Taha
+ * Purpose: Mark request as resolved
+ */
+bool HelpDesk::resolveRequest(int requestId) {
+    // TODO: Implemented by Khaled Taha
+    // 1. Search request in BST
+    // 2. If found, update status to "Resolved"
+    // 3. Set resolvedTime
+    // 4. Unassign from agent
+    // 5. Increment resolvedRequests
+    // 6. Return true if successful
+    return false;  // Placeholder
 }
 
-// Sort requests by priority (Sorting Algorithm Requirement)
-void HelpDesk::sortRequestsByPriority() {
-    // TODO:
-    // Implement one of: Bubble Sort, Insertion Sort, or Selection Sort
-    // 
-    // 1. Get all pending requests from queue into array
-    // 2. Apply sorting algorithm to sort by priority (highest first)
-    // 3. Display sorted list
-    // 4. Optionally: reconstruct queue in sorted order
-    //
-    // Example: Bubble Sort
-    // - Compare adjacent elements
-    // - Swap if priority[i] < priority[i+1]
-    // - Repeat until sorted
-    //
-    // Display Big-O complexity: O(n²) for bubble/insertion/selection sort
-}
-
-// Linear search for agent (Searching Algorithm Requirement)
-void HelpDesk::linearSearchAgent(string name) {
-    // TODO:
-    // Implement Linear Search algorithm
-    // 
-    // 1. Traverse agentList from head to end
-    // 2. Compare each agent name with search name
-    // 3. If match found:
-    //    - Display agent details
-    //    - Note: found at position X
-    // 4. If not found, display "Agent not found"
-    // 5. Display Big-O complexity: O(n) for linear search
-}
-
-// Assign specific agent to request
-bool HelpDesk::assignAgentToRequest(int requestId, int agentId) {
-    // TODO:
-    // 1. Search for request in BST
-    // 2. If not found, return false
-    // 3. Search for agent in linked list
-    // 4. If not found, return false
-    // 5. Check if agent is available
-    // 6. If not available, display warning
-    // 7. Update request with agent name
-    // 8. Call agentList.assignRequest(agentId)
-    // 9. Update status to "InProgress"
-    // 10. Return true
-}
-
-// Process escalation from stack
+/*
+ * Function: processEscalation
+ * Owner: Khaled Taha
+ * Purpose: Pop and handle escalation
+ */
 bool HelpDesk::processEscalation() {
-    // TODO:
-    // 1. Check if escalation stack is empty
-    // 2. If empty, return false
-    // 3. Pop escalation from stack
-    // 4. Display escalation details
-    // 5. Assign to senior agent or handle specially
-    // 6. Update request status in BST
-    // 7. Return true
+    // TODO: Implemented by Khaled Taha
+    // 1. Check if stack empty
+    // 2. Pop escalation
+    // 3. Display escalation details
+    // 4. Update status in BST
+    // 5. Return true if successful
+    return false;  // Placeholder
 }
 
-// Get current timestamp
-string HelpDesk::getCurrentTimestamp() {
-    // TODO:
-    // Use C++ time functions to get current date and time
-    // Format: "YYYY-MM-DD HH:MM:SS" or similar
-    // 
-    // Example implementation:
-    // time_t now = time(0);
-    // tm* ltm = localtime(&now);
-    // Format and return as string
-    //
-    // For now, you can return a placeholder like "2026-11-22 10:30:00"
+// ========================================
+// SECTION: نور محمد (Agent Management)
+// ========================================
+
+/*
+ * Function: addAgent
+ * Owner: Nour Mohamed
+ * Purpose: Add new agent to system
+ */
+bool HelpDesk::addAgent(int agentId, string name, string specialization,
+                        string email, string phoneNumber) {
+    // TODO: Implemented by Nour Mohamed
+    // Call agentList.insertAgent()
+    return false;  // Placeholder
 }
 
-// Get next request ID
-int HelpDesk::getNextRequestId() {
-    // TODO:
-    // Return nextRequestId and increment it
-    // return nextRequestId++;
+/*
+ * Function: searchRequestById
+ * Owner: Nour Mohamed
+ * Purpose: Search using BST (R6 algorithm requirement)
+ * NOTE: Demonstrates O(log n) search
+ */
+bool HelpDesk::searchRequestById(int requestId) {
+    // TODO: Implemented by Nour Mohamed
+    // 1. Call requestTree.search()
+    // 2. If found, display request details
+    // 3. Return true if found
+    return false;  // Placeholder
+}
+
+// ========================================
+// SECTION: هبه رجب (Agent Removal + Assignment)
+// ========================================
+
+/*
+ * Function: removeAgent
+ * Owner: Heba Ragab
+ * Purpose: Remove agent from system
+ */
+bool HelpDesk::removeAgent(int agentId) {
+    // TODO: Implemented by Heba Ragab
+    // 1. Check if agent has assigned requests
+    // 2. If yes, display warning
+    // 3. Call agentList.deleteAgent()
+    // 4. Return result
+    return false;  // Placeholder
+}
+
+/*
+ * Function: assignAgentToRequest
+ * Owner: Heba Ragab
+ * Purpose: Manually assign agent to request
+ */
+bool HelpDesk::assignAgentToRequest(int requestId, int agentId) {
+    // TODO: Implemented by Heba Ragab
+    // 1. Search request in BST
+    // 2. Search agent in list
+    // 3. Check agent availability
+    // 4. Assign agent to request
+    // 5. Update both structures
+    // 6. Return true if successful
+    return false;  // Placeholder
+}
+
+// ========================================
+// SECTION: نور وائل (View Operations)
+// ========================================
+
+/*
+ * Function: viewRequest
+ * Owner: Nour Wael
+ * Purpose: Display single request details
+ */
+void HelpDesk::viewRequest(int requestId) {
+    // TODO: Implemented by Nour Wael
+    // 1. Search in BST
+    // 2. If found, display all details
+    // 3. If not found, display error
+}
+
+/*
+ * Function: viewAllRequests
+ * Owner: Nour Wael
+ * Purpose: Display all requests in sorted order
+ */
+void HelpDesk::viewAllRequests() {
+    // TODO: Implemented by Nour Wael
+    // Call requestTree.inorderTraversal()
+}
+
+/*
+ * Function: viewAllAgents
+ * Owner: Nour Wael
+ * Purpose: Display all agents
+ */
+void HelpDesk::viewAllAgents() {
+    // TODO: Implemented by Nour Wael
+    // Call agentList.displayAgents()
 }

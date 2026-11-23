@@ -3,115 +3,157 @@
  * Help Desk Priority Simulation
  * 
  * File: Queue.cpp
- * Implementation file for Priority Queue data structure
- * Complete all function bodies below
+ * Implementation: Priority Queue data structure
+ * 
+ * SKELETON VERSION - Function bodies are intentionally empty
+ * Team members will implement their assigned functions
  */
 
 #include "Queue.h"
 
 // ========================================
 // SECTION 1: عمر محمد (Functions 1-5)
-// Work on these FIRST, then commit
 // ========================================
 
-// Constructor - Initialize empty queue
+/*
+ * Constructor
+ * Owner: Omar Mohamed
+ * Purpose: Initialize empty queue
+ */
 Queue::Queue() {
-    // TODO: 
-    // Initialize frontIndex = 0
-    // Initialize rearIndex = -1
-    // Initialize count = 0
+    // TODO: Implemented by Omar Mohamed
+    // Initialize frontIndex, rearIndex, count
 }
 
-// Destructor
-Queue::~Queue() {
-    // TODO: Clean up if needed (not required for array-based queue)
-}
-
-// Add request to queue with priority
-bool Queue::enqueue(int requestId, string customerName, string issueType, 
+/*
+ * Function: enqueue
+ * Owner: Omar Mohamed
+ * Purpose: Add request to queue
+ */
+bool Queue::enqueue(int requestId, string customerName, string issueType,
                     string description, int priority, string timestamp) {
-    // TODO:
-    // 1. Check if queue is full using isFull()
+    // TODO: Implemented by Omar Mohamed
+    // 1. Check if full
     // 2. If full, return false
-    // 3. Increment rearIndex (use circular: rearIndex = (rearIndex + 1) % MAX_SIZE)
-    // 4. Create new ServiceRequest and assign all values
-    // 5. Set status to "Waiting"
-    // 6. Add to data[rearIndex]
-    // 7. Increment count
-    // 8. Return true
-    //
-    // Note: For priority queue, you may want to insert in sorted order
-    // or find highest priority when dequeueing
+    // 3. Add to queue (consider priority)
+    // 4. Update indices and count
+    // 5. Return true
+    return false;  // Placeholder
 }
 
-// Remove and return highest priority request
-ServiceRequest Queue::dequeue() {
-    // TODO:
-    // 1. Check if queue is empty
-    // 2. If empty, display error and return empty ServiceRequest
-    // 3. Find highest priority request using getHighestPriority()
-    // 4. Get the request at that index
-    // 5. Shift elements or mark as removed
-    // 6. Update frontIndex (circular: frontIndex = (frontIndex + 1) % MAX_SIZE)
-    // 7. Decrement count
-    // 8. Return the request
-}
-
-// View front request without removing
+/*
+ * Function: front
+ * Owner: Omar Mohamed
+ * Purpose: View front request
+ */
 ServiceRequest Queue::front() {
-    // TODO:
-    // 1. Check if queue is empty
-    // 2. If empty, display error and return empty ServiceRequest
-    // 3. Find highest priority request
-    // 4. Return copy of that request
+    // TODO: Implemented by Omar Mohamed
+    // 1. Check if empty
+    // 2. Return front request
+    ServiceRequest empty;
+    empty.requestId = -1;
+    return empty;  // Placeholder
 }
 
-// Check if queue is empty
+/*
+ * Function: isEmpty
+ * Owner: Omar Mohamed
+ * Purpose: Check if empty
+ */
 bool Queue::isEmpty() {
-    // TODO: Return true if count == 0, false otherwise
+    // TODO: Implemented by Omar Mohamed
+    // Return true if count == 0
+    return true;  // Placeholder
 }
 
-// Check if queue is full
-bool Queue::isFull() {
-    // TODO: Return true if count == MAX_SIZE, false otherwise
-}
-
-// Get current size
+/*
+ * Function: size
+ * Owner: Omar Mohamed
+ * Purpose: Get current size
+ */
 int Queue::size() {
-    // TODO: Return count
+    // TODO: Implemented by Omar Mohamed
+    // Return count
+    return 0;  // Placeholder
 }
 
-// Display all requests in queue
+// ========================================
+// SECTION 2: خالد طه (Functions 6-11)
+// ========================================
+
+/*
+ * Destructor
+ * Owner: Khaled Taha
+ * Purpose: Clean up resources
+ */
+Queue::~Queue() {
+    // TODO: Implemented by Khaled Taha
+    // Array-based: nothing to clean
+}
+
+/*
+ * Function: dequeue
+ * Owner: Khaled Taha
+ * Purpose: Remove highest priority request
+ * NOTE: This is the MOST COMPLEX queue function
+ */
+ServiceRequest Queue::dequeue() {
+    // TODO: Implemented by Khaled Taha
+    // 1. Check if empty
+    // 2. Find highest priority using getHighestPriority()
+    // 3. Remove that request
+    // 4. Shift elements if needed
+    // 5. Update count
+    // 6. Return the request
+    ServiceRequest empty;
+    empty.requestId = -1;
+    return empty;  // Placeholder
+}
+
+/*
+ * Function: isFull
+ * Owner: Khaled Taha
+ * Purpose: Check if full
+ */
+bool Queue::isFull() {
+    // TODO: Implemented by Khaled Taha
+    // Return true if count == MAX_SIZE
+    return false;  // Placeholder
+}
+
+/*
+ * Function: display
+ * Owner: Khaled Taha
+ * Purpose: Display all requests
+ */
 void Queue::display() {
-    // TODO:
-    // 1. Check if empty and display message
+    // TODO: Implemented by Khaled Taha
+    // 1. Check if empty
     // 2. Print header
-    // 3. Loop through all requests (use circular index)
-    // 4. Display each request with details:
-    //    - Request ID
-    //    - Customer Name
-    //    - Issue Type
-    //    - Description
-    //    - Priority (show as text: Low/Medium/High/Critical)
-    //    - Timestamp
-    //    - Status
-    // 5. Sort or indicate priority order
+    // 3. Loop through queue
+    // 4. Display each request with priority
 }
 
-// Clear all requests
+/*
+ * Function: clear
+ * Owner: Khaled Taha
+ * Purpose: Clear all requests
+ */
 void Queue::clear() {
-    // TODO:
-    // Reset frontIndex = 0
-    // Reset rearIndex = -1
-    // Reset count = 0
+    // TODO: Implemented by Khaled Taha
+    // Reset frontIndex, rearIndex, count
 }
 
-// Helper: Find highest priority request
+/*
+ * Function: getHighestPriority
+ * Owner: Khaled Taha
+ * Purpose: Find index of highest priority request
+ * NOTE: Helper for dequeue - complex priority logic
+ */
 int Queue::getHighestPriority() {
-    // TODO:
-    // 1. If empty, return -1
-    // 2. Loop through all requests in queue
-    // 3. Find request with highest priority value (4 = Critical is highest)
-    // 4. If same priority, use FIFO (first one added)
-    // 5. Return index of highest priority request
+    // TODO: Implemented by Khaled Taha
+    // 1. Loop through queue
+    // 2. Find request with highest priority (4=Critical is highest)
+    // 3. Return its index
+    return -1;  // Placeholder
 }

@@ -3,215 +3,297 @@
  * Help Desk Priority Simulation
  * 
  * File: BST.cpp
- * Implementation file for Binary Search Tree
- * Complete all function bodies below
+ * Implementation: Binary Search Tree data structure
+ * 
+ * SKELETON VERSION - Function bodies are intentionally empty
+ * Team members will implement their assigned functions
  */
 
 #include "BST.h"
 
 // ========================================
 // SECTION 1: نور محمد (Functions 1-7)
-// Work on these FIRST, then commit
 // ========================================
 
-// Constructor
+/*
+ * Constructor
+ * Owner: Nour Mohamed
+ * Purpose: Initialize empty BST
+ */
 BST::BST() {
-    // TODO:
-    // Set root = NULL
-    // Set count = 0
+    // TODO: Implemented by Nour Mohamed
+    // Initialize root to NULL, count to 0
 }
 
-// Destructor
-BST::~BST() {
-    // TODO:
-    // Call clear() to delete all nodes
-}
-
-// Public insert function
+/*
+ * Function: insert (public)
+ * Owner: Nour Mohamed
+ * Purpose: Add new request to BST
+ */
 bool BST::insert(int requestId, string customerName, string issueType,
                  string assignedAgent, string status, string createdTime) {
-    // TODO:
-    // 1. Check if requestId already exists using search()
-    // 2. If exists, return false
-    // 3. Create RequestRecord and fill all fields
-    // 4. Set resolvedTime to empty string
-    // 5. Call insertHelper(root, record)
-    // 6. Update root with returned value
-    // 7. Increment count
-    // 8. Return true
+    // TODO: Implemented by Nour Mohamed
+    // 1. Create RequestRecord
+    // 2. Call insertHelper with root
+    // 3. Update root and count
+    // 4. Return true if inserted
+    return false;  // Placeholder
 }
 
-// Private recursive insert helper
+/*
+ * Function: insertHelper (private recursive)
+ * Owner: Nour Mohamed
+ * Purpose: Recursive insert helper
+ * NOTE: Core BST insertion algorithm
+ */
 BSTNode* BST::insertHelper(BSTNode* node, RequestRecord record) {
-    // TODO:
-    // 1. If node == NULL:
-    //    - Create new BSTNode
-    //    - Set data = record
-    //    - Set left = NULL, right = NULL
-    //    - Return new node
-    // 2. If record.requestId < node->data.requestId:
-    //    - node->left = insertHelper(node->left, record)
-    // 3. Else:
-    //    - node->right = insertHelper(node->right, record)
-    // 4. Return node
-}
-
-// Public search function
-BSTNode* BST::search(int requestId) {
-    // TODO:
-    // Return searchHelper(root, requestId)
-}
-
-// Private recursive search helper
-BSTNode* BST::searchHelper(BSTNode* node, int requestId) {
-    // TODO:
-    // 1. If node == NULL or node->data.requestId == requestId:
-    //    - Return node
-    // 2. If requestId < node->data.requestId:
-    //    - Return searchHelper(node->left, requestId)
-    // 3. Else:
-    //    - Return searchHelper(node->right, requestId)
-}
-
-// Public delete function
-bool BST::deleteRequest(int requestId) {
-    // TODO:
-    // 1. If tree is empty, return false
-    // 2. If search(requestId) returns NULL, return false
-    // 3. root = deleteHelper(root, requestId)
-    // 4. Decrement count
-    // 5. Return true
-}
-
-// Private recursive delete helper
-BSTNode* BST::deleteHelper(BSTNode* node, int requestId) {
-    // TODO:
-    // 1. If node == NULL, return NULL
-    // 2. If requestId < node->data.requestId:
-    //    - node->left = deleteHelper(node->left, requestId)
-    // 3. Else if requestId > node->data.requestId:
-    //    - node->right = deleteHelper(node->right, requestId)
-    // 4. Else (found the node to delete):
-    //    - Case 1: No left child -> return node->right
-    //    - Case 2: No right child -> return node->left
-    //    - Case 3: Two children:
-    //      * Find minimum in right subtree using findMinNode(node->right)
-    //      * Copy that node's data to current node
-    //      * Delete the minimum node from right subtree
-    //      * node->right = deleteHelper(node->right, minNode->data.requestId)
+    // TODO: Implemented by Nour Mohamed
+    // 1. If node is NULL, create new node
+    // 2. If record.requestId < node->data.requestId, go left
+    // 3. If record.requestId > node->data.requestId, go right
+    // 4. If equal, duplicate - return node
     // 5. Return node
+    return NULL;  // Placeholder
 }
 
-// Find minimum node (leftmost)
-BSTNode* BST::findMinNode(BSTNode* node) {
-    // TODO:
-    // 1. If node == NULL, return NULL
-    // 2. While node->left != NULL:
-    //    - node = node->left
-    // 3. Return node
+/*
+ * Function: search (public)
+ * Owner: Nour Mohamed
+ * Purpose: Find request by ID
+ */
+BSTNode* BST::search(int requestId) {
+    // TODO: Implemented by Nour Mohamed
+    // Call searchHelper with root
+    return NULL;  // Placeholder
 }
 
-// Public inorder traversal
-void BST::inorderTraversal() {
-    // TODO:
-    // 1. Check if tree is empty
-    // 2. If empty, display "No requests"
-    // 3. Print header
-    // 4. Call inorderHelper(root)
+/*
+ * Function: searchHelper (private recursive)
+ * Owner: Nour Mohamed
+ * Purpose: Recursive search helper
+ * NOTE: O(log n) average case
+ */
+BSTNode* BST::searchHelper(BSTNode* node, int requestId) {
+    // TODO: Implemented by Nour Mohamed
+    // 1. If node is NULL, not found
+    // 2. If requestId == node->data.requestId, found
+    // 3. If requestId < node->data.requestId, go left
+    // 4. If requestId > node->data.requestId, go right
+    return NULL;  // Placeholder
 }
 
-// Private inorder helper (Left-Root-Right)
-void BST::inorderHelper(BSTNode* node) {
-    // TODO:
-    // 1. If node == NULL, return
-    // 2. inorderHelper(node->left)
-    // 3. Display node data:
-    //    - Request ID
-    //    - Customer Name
-    //    - Issue Type
-    //    - Assigned Agent
-    //    - Status
-    //    - Created Time
-    // 4. inorderHelper(node->right)
-}
-
-// Public preorder traversal
-void BST::preorderTraversal() {
-    // TODO:
-    // 1. Check if tree is empty
-    // 2. If empty, display "No requests"
-    // 3. Print header
-    // 4. Call preorderHelper(root)
-}
-
-// Private preorder helper (Root-Left-Right)
-void BST::preorderHelper(BSTNode* node) {
-    // TODO:
-    // 1. If node == NULL, return
-    // 2. Display node data (same format as inorder)
-    // 3. preorderHelper(node->left)
-    // 4. preorderHelper(node->right)
-}
-
-// Find minimum (public)
-BSTNode* BST::findMin() {
-    // TODO:
-    // Return findMinNode(root)
-}
-
-// Find maximum (rightmost)
-BSTNode* BST::findMax() {
-    // TODO:
-    // 1. If root == NULL, return NULL
-    // 2. BSTNode* current = root
-    // 3. While current->right != NULL:
-    //    - current = current->right
-    // 4. Return current
-}
-
-// Check if empty
+/*
+ * Function: isEmpty
+ * Owner: Nour Mohamed
+ * Purpose: Check if BST is empty
+ */
 bool BST::isEmpty() {
-    // TODO:
-    // Return true if root == NULL, false otherwise
+    // TODO: Implemented by Nour Mohamed
+    // Return true if root == NULL
+    return true;  // Placeholder
 }
 
-// Get count
+/*
+ * Function: getCount
+ * Owner: Nour Mohamed
+ * Purpose: Get total number of requests
+ */
 int BST::getCount() {
-    // TODO:
+    // TODO: Implemented by Nour Mohamed
     // Return count
+    return 0;  // Placeholder
 }
 
-// Update status
-bool BST::updateStatus(int requestId, string newStatus) {
-    // TODO:
-    // 1. Search for request
-    // 2. If not found, return false
-    // 3. Update node->data.status = newStatus
-    // 4. Return true
+// ========================================
+// SECTION 2: هبه رجب (Functions 8-14)
+// ========================================
+
+/*
+ * Destructor
+ * Owner: Heba Ragab
+ * Purpose: Delete all nodes and free memory
+ * NOTE: CRITICAL - Must prevent memory leaks!
+ */
+BST::~BST() {
+    // TODO: Implemented by Heba Ragab
+    // Call clearHelper to delete all nodes
 }
 
-// Update resolved time
-bool BST::updateResolvedTime(int requestId, string resolvedTime) {
-    // TODO:
-    // 1. Search for request
-    // 2. If not found, return false
-    // 3. Update node->data.resolvedTime = resolvedTime
-    // 4. Return true
+/*
+ * Function: deleteRequest (public)
+ * Owner: Heba Ragab
+ * Purpose: Remove request from BST
+ */
+bool BST::deleteRequest(int requestId) {
+    // TODO: Implemented by Heba Ragab
+    // 1. Call deleteHelper
+    // 2. Update count if deleted
+    // 3. Return true if successful
+    return false;  // Placeholder
 }
 
-// Clear tree
+/*
+ * Function: deleteHelper (private recursive)
+ * Owner: Heba Ragab
+ * Purpose: Recursive delete helper
+ * NOTE: MOST COMPLEX BST FUNCTION - 3 cases!
+ *       Case 1: Node with no children (leaf)
+ *       Case 2: Node with one child
+ *       Case 3: Node with two children (use inorder successor)
+ */
+BSTNode* BST::deleteHelper(BSTNode* node, int requestId) {
+    // TODO: Implemented by Heba Ragab
+    // 1. If node is NULL, not found
+    // 2. If requestId < node->data.requestId, go left
+    // 3. If requestId > node->data.requestId, go right
+    // 4. If equal, found - handle 3 cases:
+    //    a. No children: delete node, return NULL
+    //    b. One child: return that child
+    //    c. Two children: find inorder successor, copy data, delete successor
+    return NULL;  // Placeholder
+}
+
+/*
+ * Function: findMinNode (private)
+ * Owner: Heba Ragab
+ * Purpose: Find minimum node in subtree
+ * NOTE: Used for finding inorder successor in delete
+ */
+BSTNode* BST::findMinNode(BSTNode* node) {
+    // TODO: Implemented by Heba Ragab
+    // 1. Go left until leftmost node
+    // 2. Return that node
+    return NULL;  // Placeholder
+}
+
+/*
+ * Function: findMin (public)
+ * Owner: Heba Ragab
+ * Purpose: Find request with smallest ID
+ */
+BSTNode* BST::findMin() {
+    // TODO: Implemented by Heba Ragab
+    // Call findMinNode with root
+    return NULL;  // Placeholder
+}
+
+/*
+ * Function: findMax (public)
+ * Owner: Heba Ragab
+ * Purpose: Find request with largest ID
+ */
+BSTNode* BST::findMax() {
+    // TODO: Implemented by Heba Ragab
+    // 1. Start at root
+    // 2. Go right until rightmost node
+    // 3. Return that node
+    return NULL;  // Placeholder
+}
+
+/*
+ * Function: clear (public)
+ * Owner: Heba Ragab
+ * Purpose: Remove all requests
+ */
 void BST::clear() {
-    // TODO:
-    // 1. Call clearHelper(root)
-    // 2. Set root = NULL
-    // 3. Set count = 0
+    // TODO: Implemented by Heba Ragab
+    // Call clearHelper, set root to NULL, count to 0
 }
 
-// Private clear helper (postorder deletion)
+// ========================================
+// SECTION 3: نور وائل (Functions 15-21)
+// NEW: Nour Wael gets MEANINGFUL BST work!
+// ========================================
+
+/*
+ * Function: inorderTraversal (public)
+ * Owner: Nour Wael
+ * Purpose: Display all requests in sorted order
+ * NOTE: Demonstrates tree traversal algorithm
+ */
+void BST::inorderTraversal() {
+    // TODO: Implemented by Nour Wael
+    // 1. Check if empty
+    // 2. Print header
+    // 3. Call inorderHelper with root
+}
+
+/*
+ * Function: inorderHelper (private recursive)
+ * Owner: Nour Wael
+ * Purpose: Recursive inorder traversal (Left-Root-Right)
+ * NOTE: Core traversal algorithm - recursive
+ */
+void BST::inorderHelper(BSTNode* node) {
+    // TODO: Implemented by Nour Wael
+    // 1. If node is NULL, return
+    // 2. Recursively visit left subtree
+    // 3. Display current node
+    // 4. Recursively visit right subtree
+}
+
+/*
+ * Function: preorderTraversal (public)
+ * Owner: Nour Wael
+ * Purpose: Display all requests in preorder
+ */
+void BST::preorderTraversal() {
+    // TODO: Implemented by Nour Wael
+    // 1. Check if empty
+    // 2. Print header
+    // 3. Call preorderHelper with root
+}
+
+/*
+ * Function: preorderHelper (private recursive)
+ * Owner: Nour Wael
+ * Purpose: Recursive preorder traversal (Root-Left-Right)
+ * NOTE: Different traversal order than inorder
+ */
+void BST::preorderHelper(BSTNode* node) {
+    // TODO: Implemented by Nour Wael
+    // 1. If node is NULL, return
+    // 2. Display current node
+    // 3. Recursively visit left subtree
+    // 4. Recursively visit right subtree
+}
+
+/*
+ * Function: updateStatus
+ * Owner: Nour Wael
+ * Purpose: Update request status
+ */
+bool BST::updateStatus(int requestId, string newStatus) {
+    // TODO: Implemented by Nour Wael
+    // 1. Search for request
+    // 2. If found, update status
+    // 3. Return true if successful
+    return false;  // Placeholder
+}
+
+/*
+ * Function: updateResolvedTime
+ * Owner: Nour Wael
+ * Purpose: Set resolved time for request
+ */
+bool BST::updateResolvedTime(int requestId, string resolvedTime) {
+    // TODO: Implemented by Nour Wael
+    // 1. Search for request
+    // 2. If found, set resolvedTime
+    // 3. Return true if successful
+    return false;  // Placeholder
+}
+
+/*
+ * Function: clearHelper (private recursive)
+ * Owner: Nour Wael
+ * Purpose: Recursive helper to delete all nodes
+ * NOTE: Post-order traversal for deletion (Left-Right-Root)
+ */
 void BST::clearHelper(BSTNode* node) {
-    // TODO:
-    // 1. If node == NULL, return
-    // 2. clearHelper(node->left)
-    // 3. clearHelper(node->right)
-    // 4. delete node
+    // TODO: Implemented by Nour Wael
+    // 1. If node is NULL, return
+    // 2. Recursively delete left subtree
+    // 3. Recursively delete right subtree
+    // 4. Delete current node
 }

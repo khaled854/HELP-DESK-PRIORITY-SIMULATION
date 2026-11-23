@@ -43,7 +43,9 @@
 15. `main::handleRequestManagement()` - Request menu
 
 **الصعوبة:** ⭐⭐⭐ Medium  
-**الوقت:** 12-14 ساعة
+**الوقت:** 12-14 ساعة (implementation)  
+**🧪 Testing:** Tests **Nour Wael's** work (2-3h)  
+**Total:** 14-17 hours
 
 ---
 
@@ -71,7 +73,9 @@
 15. `main::handleSearchOperations()` - Search menu
 
 **الصعوبة:** ⭐⭐⭐ Medium  
-**الوقت:** 13-15 ساعة
+**الوقت:** 13-15 ساعة (implementation)  
+**🧪 Testing:** Tests **Omar's** work (2-3h)  
+**Total:** 15-18 hours
 
 ---
 
@@ -200,19 +204,21 @@
 
 ---
 
-## 📊 جدول المقارنة المتوازن
+## 📊 جدول المقارنة المتوازن (محدث - مع Testing)
 
-| العضو | Stack | Queue | LinkedList | BST | Integration | Testing | Total | الوقت |
-|------|-------|-------|------------|-----|-------------|---------|-------|-------|
-| عمر | 5 | 5 | 0 | 0 | 5 | Own | 15 | 12-14h |
-| خالد | 5 | 6 | 0 | 0 | 4 | Own | 15 | 13-15h |
-| نور | 0 | 0 | 7 | 7 | 2 | Own | 16 | 13-15h |
-| هبه | 0 | 0 | 7 | 7 | 2 | Own | 16 | 14-16h |
-| مريم | 0 | 0 | 0 | 7 | 8 | Own | 15 | 14-16h |
-| نور و | 0 | 0 | 0 | 0 | 10 | All | 16 | 13-15h |
+| العضو | Implementation | Testing | **Total Hours** |
+|------|----------------|---------|-----------------|
+| عمر | 15 func (12-14h) | Tests Nour W (2-3h) | **14-17h** |
+| خالد | 15 func (13-15h) | Tests Omar (2-3h) | **15-18h** |
+| نور | 16 func (13-15h) | Tests Khالد (2-3h) | **15-18h** |
+| هبه | 16 func (14-16h) | Tests Nour (3-4h) | **17-20h** |
+| مريم | 15 func (14-16h) | Tests Heba (3-4h) | **17-20h** |
+| نور و | 16 func (13-15h) | Tests Mariam (3-4h) | **16-19h** |
 
-**المتوسط:** 15.5 functions, 13-15 ساعة  
-**الفرق:** ±1.5 ساعة فقط! ⚖️
+**المتوسط:** 16-18 ساعة للشخص  
+**الفرق:** ±3 ساعات (ممتاز!) ⚖️
+
+**🆕 NEW**: Everyone implements AND tests someone else's work!
 
 ---
 

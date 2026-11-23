@@ -3,106 +3,142 @@
  * Help Desk Priority Simulation
  * 
  * File: Stack.cpp
- * Description: Implementation of Stack data structure
+ * Implementation: Stack data structure
+ * 
+ * SKELETON VERSION - Function bodies are intentionally empty
+ * Team members will implement their assigned functions
  */
 
 #include "Stack.h"
 
 // ========================================
 // SECTION 1: عمر محمد (Functions 1-5)
-// Work on these FIRST, then commit
 // ========================================
 
-// Constructor - Initialize empty stack
+/*
+ * Constructor
+ * Owner: Omar Mohamed
+ * Purpose: Initialize empty stack
+ */
 Stack::Stack() {
-    // TODO: Initialize top to -1 (empty stack)
+    // TODO: Implemented by Omar Mohamed
+    // Initialize top to -1 (empty stack)
 }
 
-// Destructor
-Stack::~Stack() {
-    // TODO: Clean up if needed (not required for array-based stack)
-}
-
-// Push new escalation to stack
+/*
+ * Function: push
+ * Owner: Omar Mohamed
+ * Purpose: Add escalation to stack
+ */
 bool Stack::push(int requestId, string agentName, string reason, string timestamp, int priorityLevel) {
-    // TODO: 
+    // TODO: Implemented by Omar Mohamed
     // 1. Check if stack is full using isFull()
     // 2. If full, return false
     // 3. Increment top
     // 4. Create new Escalation and assign values
     // 5. Add to data[top]
     // 6. Return true
+    return false;  // Placeholder
 }
 
-// Pop top escalation from stack
+/*
+ * Function: pop
+ * Owner: Omar Mohamed
+ * Purpose: Remove and return top escalation
+ */
 Escalation Stack::pop() {
-    // TODO:
-    // 1. Check if stack is empty using isEmpty()
+    // TODO: Implemented by Omar Mohamed
+    // 1. Check if empty
     // 2. If empty, display error and return empty Escalation
     // 3. Get escalation at data[top]
     // 4. Decrement top
     // 5. Return the escalation
+    Escalation empty;
+    empty.requestId = -1;
+    return empty;  // Placeholder
 }
 
-// Peek at top escalation without removing
+/*
+ * Function: peek
+ * Owner: Omar Mohamed
+ * Purpose: View top without removing
+ */
 Escalation Stack::peek() {
-    // TODO:
-    // 1. Check if stack is empty
-    // 2. If empty, display error and return empty Escalation
+    // TODO: Implemented by Omar Mohamed
+    // 1. Check if empty
+    // 2. If empty, return empty Escalation
     // 3. Return copy of data[top]
+    Escalation empty;
+    empty.requestId = -1;
+    return empty;  // Placeholder
 }
 
-// Check if stack is empty
+/*
+ * Function: isEmpty
+ * Owner: Omar Mohamed
+ * Purpose: Check if stack is empty
+ */
 bool Stack::isEmpty() {
-    // TODO: Return true if top == -1, false otherwise
+    // TODO: Implemented by Omar Mohamed
+    // Return true if top == -1
+    return true;  // Placeholder
 }
-
-// ========================================
-// END OF SECTION 1 (عمر محمد)
-// Commit your work before continuing!
-// ========================================
-
 
 // ========================================
 // SECTION 2: خالد طه (Functions 6-10)
-// Work on these AFTER عمر commits
 // ========================================
 
-// Destructor
+/*
+ * Destructor
+ * Owner: Khaled Taha
+ * Purpose: Clean up resources
+ */
 Stack::~Stack() {
-    // TODO: Clean up if needed (not required for array-based stack)
+    // TODO: Implemented by Khaled Taha
+    // Array-based: nothing to clean
 }
 
-// Check if stack is full
+/*
+ * Function: isFull
+ * Owner: Khaled Taha
+ * Purpose: Check if stack is full
+ */
 bool Stack::isFull() {
-    // TODO: Return true if top == MAX_SIZE-1, false otherwise
+    // TODO: Implemented by Khaled Taha
+    // Return true if top == MAX_SIZE-1
+    return false;  // Placeholder
 }
 
-// Get current size of stack
+/*
+ * Function: size
+ * Owner: Khaled Taha
+ * Purpose: Get current size
+ */
 int Stack::size() {
-    // TODO: Return top + 1 (number of elements)
+    // TODO: Implemented by Khaled Taha
+    // Return top + 1
+    return 0;  // Placeholder
 }
 
-// Display all escalations in stack
+/*
+ * Function: display
+ * Owner: Khaled Taha
+ * Purpose: Display all escalations
+ */
 void Stack::display() {
-    // TODO:
-    // 1. Check if empty and display message
+    // TODO: Implemented by Khaled Taha
+    // 1. Check if empty
     // 2. Print header
     // 3. Loop from top to 0
-    // 4. Display each escalation with details:
-    //    - Request ID
-    //    - Agent Name
-    //    - Reason
-    //    - Timestamp
-    //    - Priority Level
+    // 4. Display each escalation details
 }
 
-// Clear all escalations from stack
+/*
+ * Function: clear
+ * Owner: Khaled Taha
+ * Purpose: Clear all escalations
+ */
 void Stack::clear() {
-    // TODO: Set top to -1
+    // TODO: Implemented by Khaled Taha
+    // Set top to -1
 }
-
-// ========================================
-// END OF SECTION 2 (خالد طه)
-// All Stack functions complete!
-// ========================================
