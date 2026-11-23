@@ -25,36 +25,52 @@ Stack::~Stack() {
 
 // Push new escalation to stack
 bool Stack::push(int requestId, string agentName, string reason, string timestamp, int priorityLevel) {
-    // TODO: 
-    // 1. Check if stack is full using isFull()
-    // 2. If full, return false
-    // 3. Increment top
-    // 4. Create new Escalation and assign values
-    // 5. Add to data[top]
-    // 6. Return true
+    if (isFull()) {
+        return false;
+    }
+
+    top++;
+
+    Escalation newEscalation;
+    newEscalation.requestId = requestId;
+    newEscalation.agentName = agentName;
+    newEscalation.reason = reason;
+    newEscalation.timestamp = timestamp;
+    newEscalation.priorityLevel = priorityLevel;
+
+    data[top] = newEscalation;
+    return true;
 }
 
 // Pop top escalation from stack
 Escalation Stack::pop() {
-    // TODO:
-    // 1. Check if stack is empty using isEmpty()
-    // 2. If empty, display error and return empty Escalation
-    // 3. Get escalation at data[top]
-    // 4. Decrement top
-    // 5. Return the escalation
+    if (isEmpty()) {
+        cout << "Stack is empty! Cannot pop escalation." << endl;
+        return Escalation();
+    }
+
+    Escalation poppedEscalation = data[top];
+    top--;
+    return poppedEscalation;
 }
 
 // Peek at top escalation without removing
 Escalation Stack::peek() {
-    // TODO:
-    // 1. Check if stack is empty
-    // 2. If empty, display error and return empty Escalation
-    // 3. Return copy of data[top]
+    if (isEmpty()) {
+        cout << "Stack is empty! No escalation to peek." << endl;
+        return Escalation();
+    }
+
+    return data[top];
 }
 
 // Check if stack is empty
 bool Stack::isEmpty() {
-    // TODO: Return true if top == -1, false otherwise
+    if (top == -1) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // ========================================
