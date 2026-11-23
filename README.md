@@ -69,20 +69,20 @@ HELP-DESK-PRIORITY-SIMULATION/
 
 ## 🎯 Fair Task Distribution (NEW)
 
-**Total Functions**: 93 functions  
-**Average per member**: 15.5 functions  
+**Total Functions**: 87 functions  
+**Average per member**: 14.5 functions  
 **Time per member**: 14-19 hours (perfectly balanced)
 
 ### Quick Overview
 
 | Member | Functions | Difficulty | Total Hours |
 |--------|-----------|------------|-------------|
-| **Omar Mohamed** | 15 | ⭐⭐⭐ Medium | 14-17h |
-| **Khaled Taha** | 15 | ⭐⭐⭐ Medium | 15-18h |
-| **Nour Mohamed** | 16 | ⭐⭐⭐ Medium | 15-18h |
-| **Heba Ragab** | 15 | ⭐⭐⭐⭐ Hard | 16-19h |
-| **Mariam Alaa** | 8 | ⭐⭐⭐⭐ Hard | 16-19h |
-| **Nour Wael** | 17 | ⭐⭐⭐⭐ Med-Hard | 16-19h |
+| **Omar Mohamed** | 14 | ⭐⭐⭐ Medium | 13-16h |
+| **Khaled Taha** | 14 | ⭐⭐⭐ Medium | 14-17h |
+| **Nour Mohamed** | 15 | ⭐⭐⭐ Medium | 14-17h |
+| **Heba Ragab** | 15 | ⭐⭐⭐⭐ Hard | 15-18h |
+| **Mariam Alaa** | 13 | ⭐⭐⭐⭐ Hard | 15-18h |
+| **Nour Wael** | 16 | ⭐⭐⭐⭐ Med-Hard | 15-18h |
 
 **📖 For complete details, see:** `Documentation/NEW_FAIR_DISTRIBUTION.md`
 
@@ -94,9 +94,9 @@ HELP-DESK-PRIORITY-SIMULATION/
 
 **NEW (FAIR)**: Nour Wael now implements:
 - ✅ 7 BST functions (traversals, updates, recursive algorithms)
-- ✅ 7 main.cpp functions (UI + validation)
+- ✅ 6 main.cpp functions (UI + validation)
 - ✅ 3 HelpDesk view functions
-- ✅ Total: 17 functions + shared testing = **16-19h** (balanced!)
+- ✅ Total: 16 functions + shared testing = **15-18h** (balanced!)
 
 **Testing is now SHARED by ALL 6 members** - no one overloaded!
 
@@ -127,11 +127,12 @@ g++ -std=c++11 -o HelpDesk main.cpp Stack.cpp Queue.cpp LinkedList.cpp BST.cpp H
 1. ✅ Stack for escalations (10 functions)
 2. ✅ Queue for priority requests (11 functions)
 3. ✅ Linked List for agents (14 functions)
-4. ✅ BST for request lookup (21 functions)
-5. ✅ Searching/Sorting algorithm (Mariam)
-6. ✅ Menu-driven interface (Nour Wael)
-7. ✅ Input validation (Nour Wael)
-8. ✅ Error handling (All members)
+4. ✅ BST for request lookup (21 functions - 8 private + 13 public)
+5. ✅ HelpDesk integration (21 functions)
+6. ✅ Menu system (10 functions in main.cpp)
+7. ✅ Searching/Sorting algorithm (Mariam)
+8. ✅ Input validation (Nour Wael)
+9. ✅ Error handling (All members)
 
 **All PDF requirements (R1-R10) are covered!**
 

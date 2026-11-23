@@ -24,19 +24,19 @@
 
 ## 👥 COMPLETE FUNCTION-LEVEL OWNERSHIP
 
-### **Total Functions**: 93 functions
+### **Total Functions**: 87 functions
 - Stack: 10 functions
 - Queue: 11 functions  
 - LinkedList: 14 functions
-- BST: 21 functions
-- HelpDesk: 23 functions
-- main.cpp: 14 functions
+- BST: 21 functions (8 private helpers + 13 public)
+- HelpDesk: 21 functions
+- main.cpp: 10 functions
 
-**Target**: ~15-16 functions per member
+**Target**: ~14-15 functions per member
 
 ---
 
-## 📋 SECTION 1: عمر محمد (Omar Mohamed) - 15 Functions
+## 📋 SECTION 1: عمر محمد (Omar Mohamed) - 14 Functions
 
 ### **Stack (5 functions)** - Basic Operations
 1. `Stack()` - Constructor
@@ -52,23 +52,22 @@
 9. `isEmpty()` - Check empty
 10. `size()` - Get size
 
-### **HelpDesk Integration (4 functions)**
+### **HelpDesk Integration (3 functions)**
 11. `createRequest()` - Create new request (Queue + BST)
 12. `escalateRequest()` - Push to Stack
 13. `viewEscalations()` - Display Stack
-14. `viewPendingRequests()` - Display Queue
 
 ### **Main Menu (1 function)**
-15. `handleRequestManagement()` - Request submenu
+14. `handleRequestManagement()` - Request submenu
 
 **Difficulty**: ⭐⭐⭐ Medium  
-**Estimated Time**: 12-14 hours (implementation)  
+**Estimated Time**: 11-13 hours (implementation)  
 **Testing**: Tests Khaled's work (2-3h)  
-**Total**: **14-17 hours**
+**Total**: **13-16 hours**
 
 ---
 
-## 📋 SECTION 2: خالد طه (Khaled Taha) - 15 Functions
+## 📋 SECTION 2: خالد طه (Khaled Taha) - 14 Functions
 
 ### **Stack (5 functions)** - Advanced Operations
 1. `~Stack()` - Destructor
@@ -85,22 +84,21 @@
 10. `clear()` - Clear all
 11. `getHighestPriority()` - Find highest priority
 
-### **HelpDesk Integration (3 functions)**
+### **HelpDesk Integration (2 functions)**
 12. `processNextRequest()` - Process from queue
 13. `resolveRequest()` - Resolve request
-14. `processEscalation()` - Pop from Stack
 
 ### **Main Menu (1 function)**
-15. `handleSearchOperations()` - Search submenu
+14. `handleSearchOperations()` - Search submenu
 
 **Difficulty**: ⭐⭐⭐ Medium  
-**Estimated Time**: 13-15 hours  
+**Estimated Time**: 12-14 hours  
 **Testing**: Tests Omar's work (2-3h)  
-**Total**: **15-18 hours**
+**Total**: **14-17 hours**
 
 ---
 
-## 📋 SECTION 3: نور محمد (Nour Mohamed) - 16 Functions
+## 📋 SECTION 3: نور محمد (Nour Mohamed) - 15 Functions
 
 ### **LinkedList (7 functions)** - Basic Operations
 1. `LinkedList()` - Constructor
@@ -120,16 +118,13 @@
 13. `isEmpty()` - Check empty
 14. `getCount()` - Get count
 
-### **HelpDesk Integration (1 function)**
-15. `addAgent()` - Insert to LinkedList
-
 ### **Main Menu (1 function)**
-16. `handleAgentManagement()` - Agent submenu
+15. `handleAgentManagement()` - Agent submenu
 
 **Difficulty**: ⭐⭐⭐ Medium  
-**Estimated Time**: 13-15 hours  
+**Estimated Time**: 12-14 hours  
 **Testing**: Tests Nour Wael's work (2-3h)  
-**Total**: **15-18 hours**
+**Total**: **14-17 hours**
 
 ---
 
@@ -144,30 +139,28 @@
 6. `findAvailableAgent()` - Find available
 7. `clear()` - Clear all ⚠️ (MEMORY!)
 
-### **BST (7 functions)** - Advanced + Delete (HARDEST!)
+### **BST (8 functions)** - Advanced + Delete (HARDEST!)
 8. `~BST()` - Destructor ⚠️ (MEMORY!)
 9. `deleteRequest()` - Delete request (public)
 10. `deleteHelper()` - **3 CASES DELETE** ⚠️ (MOST COMPLEX!)
 11. `findMinNode()` - Find minimum in subtree
 12. `findMin()` - Find minimum (public)
 13. `findMax()` - Find maximum
-14. `clear()` - Clear tree (public)
-
-### **HelpDesk Integration (1 function)**
-15. `removeAgent()` - Delete from LinkedList
+14. `clearHelper()` - Recursive clear (private)
+15. `clear()` - Clear tree (public)
 
 **Difficulty**: ⭐⭐⭐⭐ Hard  
-**Estimated Time**: 14-16 hours  
+**Estimated Time**: 13-15 hours  
 **Testing**: Tests Mariam's work (2-3h)  
-**Total**: **16-19 hours**
+**Total**: **15-18 hours**
 
 **NOTE**: Heba has the HARDEST technical tasks (BST 3-case delete + all destructors)
 
 ---
 
-## 📋 SECTION 5: مريم علاء (Mariam Alaa) - 15 Functions
+## 📋 SECTION 5: مريم علاء (Mariam Alaa) - 13 Functions
 
-### **HelpDesk Core (7 functions)** - Coordinator
+### **HelpDesk Core (13 functions)** - Integration + Algorithms
 1. `HelpDesk()` - Constructor
 2. `~HelpDesk()` - Destructor
 3. `getCurrentTimestamp()` - Get time
@@ -175,55 +168,55 @@
 5. `displayStatistics()` - System stats
 6. `sortRequestsByPriority()` - **SORTING ALGORITHM** ⚠️ (R6)
 7. `linearSearchAgent()` - **LINEAR SEARCH** ⚠️ (R6)
-
-### **HelpDesk Integration (1 function)**
-8. `searchRequestById()` - BST search
+8. `addAgent()` - Add to list
+9. `removeAgent()` - Delete from list
+10. `viewPendingRequests()` - View queue
+11. `searchRequestById()` - BST search
+12. `assignAgentToRequest()` - Assign agent
+13. `processEscalation()` - Process escalation
 
 **Difficulty**: ⭐⭐⭐⭐ Hard  
-**Estimated Time**: 14-16 hours  
+**Estimated Time**: 13-15 hours  
 **Testing**: Tests own + coordinates integration testing (2-3h)  
-**Total**: **16-19 hours**
+**Total**: **15-18 hours**
 
-**NOTE**: Mariam is INTEGRATION COORDINATOR + implements required algorithms
+**NOTE**: Mariam is INTEGRATION COORDINATOR + implements required algorithms (R6)
 
 ---
 
-## 📋 SECTION 6: نور وائل (Nour Wael) - 17 Functions
+## 📋 SECTION 6: نور وائل (Nour Wael) - 16 Functions
 
-### **🆕 BST (7 functions)** - Traversals + Updates
+### **🆕 BST (6 functions)** - Traversals + Updates
 1. `inorderTraversal()` - Inorder (public)
 2. `inorderHelper()` - Recursive inorder (private) ⚠️
 3. `preorderTraversal()` - Preorder (public)
 4. `preorderHelper()` - Recursive preorder (private) ⚠️
 5. `updateStatus()` - Update request status
 6. `updateResolvedTime()` - Update time
-7. `clearHelper()` - Recursive clear (private) ⚠️
 
-### **Main Menu System (6 functions)**
-8. `main()` - Main program loop
-9. `displayMainMenu()` - Main menu
-10. `clearInputBuffer()` - Clear buffer
-11. `getValidatedIntInput()` - **INT VALIDATION** ⚠️ (R8)
-12. `getValidatedStringInput()` - **STRING VALIDATION** ⚠️ (R8)
-13. `handleViewOperations()` - View submenu
+### **Main Menu System (7 functions)**
+7. `main()` - Main program loop
+8. `displayMainMenu()` - Main menu
+9. `clearInputBuffer()` - Clear buffer
+10. `getValidatedIntInput()` - **INT VALIDATION** ⚠️ (R8)
+11. `getValidatedStringInput()` - **STRING VALIDATION** ⚠️ (R8)
+12. `handleViewOperations()` - View submenu
+13. `runTests()` - **TEST COORDINATOR** (all 6 contribute)
 
 ### **HelpDesk Integration (3 functions)**
 14. `viewRequest()` - View single request
 15. `viewAllRequests()` - View all (BST inorder)
 16. `viewAllAgents()` - View agents
 
-### **Testing (1 major function)**
-17. `runTests()` - **TEST COORDINATOR** (all 6 contribute)
-
 **Difficulty**: ⭐⭐⭐⭐ Medium-Hard  
-**Estimated Time**: 14-16 hours  
+**Estimated Time**: 13-15 hours  
 **Testing**: Coordinates test execution + tests others (2-3h)  
-**Total**: **16-19 hours**
+**Total**: **15-18 hours**
 
-**🎉 MAJOR CHANGE**: Nour Wael now has **7 BST functions** including:
+**🎉 MAJOR CHANGE**: Nour Wael now has **6 BST functions** including:
 - Recursive traversal algorithms
-- Tree cleanup (recursive)
 - Update operations
+- Plus full menu system and validation (R8 requirement)
 
 This is **meaningful, medium-to-hard implementation work**!
 
@@ -233,15 +226,16 @@ This is **meaningful, medium-to-hard implementation work**!
 
 | Member | Stack | Queue | LinkedList | BST | HelpDesk | main.cpp | **Total Functions** | **Hours** |
 |--------|-------|-------|------------|-----|----------|----------|---------------------|-----------|
-| **Omar** | 5 | 5 | 0 | 0 | 4 | 1 | **15** | 14-17h |
-| **Khaled** | 5 | 6 | 0 | 0 | 3 | 1 | **15** | 15-18h |
-| **Nour M** | 0 | 0 | 7 | 7 | 1 | 1 | **16** | 15-18h |
-| **Heba** | 0 | 0 | 7 | 7 | 1 | 0 | **15** | 16-19h |
-| **Mariam** | 0 | 0 | 0 | 0 | 8 | 0 | **8** | 16-19h |
-| **Nour W** | 0 | 0 | 0 | **7** | 3 | 7 | **17** | 16-19h |
+| **Omar** | 5 | 5 | 0 | 0 | 3 | 1 | **14** | 13-16h |
+| **Khaled** | 5 | 6 | 0 | 0 | 2 | 1 | **14** | 14-17h |
+| **Nour M** | 0 | 0 | 7 | 7 | 0 | 1 | **15** | 14-17h |
+| **Heba** | 0 | 0 | 7 | 8 | 0 | 0 | **15** | 15-18h |
+| **Mariam** | 0 | 0 | 0 | 0 | 13 | 0 | **13** | 15-18h |
+| **Nour W** | 0 | 0 | 0 | **6** | 3 | 7 | **16** | 15-18h |
 
-**Average**: 15.3 functions per member  
-**Time Range**: 14-19 hours (±2.5h from average)  
+**Total**: 10 + 11 + 14 + 21 + 21 + 10 = **87 functions**  
+**Average**: 14.5 functions per member  
+**Time Range**: 13-18 hours (±2h from average)  
 **Balance**: ⚖️ **EXCELLENT**
 
 ---
@@ -267,26 +261,26 @@ This is **meaningful, medium-to-hard implementation work**!
 ## ✅ WHY THIS IS FAIR
 
 ### 1️⃣ **Function Count Balance**
-- Range: 15-17 functions (±1 from average)
+- Range: 13-16 functions (±1.5 from average of 14.5)
 - Every member has comparable number of functions
 
 ### 2️⃣ **Difficulty Balance**
-- **Easy**: Omar, Khaled (basic operations)
+- **Easy-Medium**: Omar, Khaled (basic operations)
 - **Medium**: Nour Mohamed (insert/search)
-- **Hard**: Heba (delete + destructors), Mariam (algorithms), **Nour Wael (recursion)**
+- **Hard**: Heba (delete + destructors), Mariam (algorithms + integration), Nour Wael (recursion + validation)
 
 ### 3️⃣ **No One Overloaded**
 - OLD: Nour Wael had 23-25h (UNFAIR!)
-- NEW: Everyone has 14-19h (FAIR!)
+- NEW: Everyone has 13-18h (FAIR!)
 
 ### 4️⃣ **Testing is Shared**
-- Everyone implements: 12-16h
+- Everyone implements: 11-15h
 - Everyone tests: 2-3h
-- Total: 14-19h per member
+- Total: 13-18h per member
 
 ### 5️⃣ **Meaningful Work for Everyone**
 - Nour Wael is NO LONGER "testing-only"
-- Nour Wael implements **7 BST functions** including recursive algorithms
+- Nour Wael implements **6 BST functions** including recursive algorithms
 - Everyone learns multiple data structures
 
 ---
@@ -350,8 +344,8 @@ This is **meaningful, medium-to-hard implementation work**!
 - Total: 23-25h for Nour Wael
 
 ### **NEW Distribution** ✅:
-- **Nour Wael: 7 BST functions + main.cpp + HelpDesk views**
-- **Total: 16-19h for Nour Wael**
+- **Nour Wael: 6 BST functions + 7 main.cpp functions + 3 HelpDesk views**
+- **Total: 15-18h for Nour Wael**
 - **Testing: Shared by ALL 6**
 
 ---

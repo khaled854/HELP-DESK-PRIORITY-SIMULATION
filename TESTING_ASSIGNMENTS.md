@@ -24,9 +24,9 @@
 **اللي هيتم اختباره:**
 - Stack Functions (5 functions): Constructor, push, pop, peek, isEmpty
 - Queue Functions (5 functions): Constructor, enqueue, front, isEmpty, size
-- HelpDesk Integration (4 functions): createRequest, escalateRequest, viewEscalations, viewPendingRequests
+- HelpDesk Integration (3 functions): createRequest, escalateRequest, viewEscalations
 
-**عدد Test Cases:** 12-15 test  
+**عدد Test Cases:** 11-13 test  
 **الوقت المتوقع:** 2-3 ساعات
 
 ---
@@ -36,9 +36,9 @@
 **اللي هيتم اختباره:**
 - Stack Functions (5 functions): Destructor, isFull, size, display, clear
 - Queue Functions (6 functions): Destructor, dequeue, isFull, display, clear, getHighestPriority
-- HelpDesk Integration (3 functions): processNextRequest, resolveRequest, processEscalation
+- HelpDesk Integration (2 functions): processNextRequest, resolveRequest
 
-**عدد Test Cases:** 12-15 test  
+**عدد Test Cases:** 11-13 test  
 **الوقت المتوقع:** 2-3 ساعات
 
 ---
@@ -48,10 +48,10 @@
 **اللي هيتم اختباره:**
 - LinkedList Functions (7 functions): Constructor, insertAgent, searchAgent, displayAgents, isEmpty, getCount, assignRequest
 - BST Functions (7 functions): Constructor, insert, insertHelper, search, searchHelper, isEmpty, getCount
-- HelpDesk Integration (1 function): addAgent
+- Main Menu (1 function): handleAgentManagement
 
-**عدد Test Cases:** 14-16 test  
-**الوقت المتوقع:** 3-4 ساعات
+**عدد Test Cases:** 13-15 test  
+**الوقت المتوقع:** 2-3 ساعات
 
 ---
 
@@ -59,10 +59,9 @@
 
 **اللي هيتم اختباره:**
 - LinkedList Functions (7 functions): Destructor, deleteAgent, updateAgent, unassignRequest, setAvailability, findAvailableAgent, clear
-- BST Functions (7 functions): Destructor, deleteRequest, deleteHelper, findMinNode, findMin, findMax, clear
-- HelpDesk Integration (1 function): removeAgent
+- BST Functions (8 functions): Destructor, deleteRequest, deleteHelper, findMinNode, findMin, findMax, clearHelper, clear
 
-**عدد Test Cases:** 14-16 test  
+**عدد Test Cases:** 13-15 test  
 **الوقت المتوقع:** 3-4 ساعات
 
 **ملاحظة:** أصعب تيستينج (BST delete + destructors)
@@ -72,11 +71,11 @@
 ### 5️⃣ **نور وائل** يختبر شغل **مريم**
 
 **اللي هيتم اختباره:**
-- HelpDesk Functions (8 functions): Constructor, Destructor, getCurrentTimestamp, getNextRequestId, displayStatistics, sortRequestsByPriority, linearSearchAgent, searchRequestById
+- HelpDesk Functions (13 functions): Constructor, Destructor, getCurrentTimestamp, getNextRequestId, displayStatistics, sortRequestsByPriority, linearSearchAgent, addAgent, removeAgent, viewPendingRequests, searchRequestById, assignAgentToRequest, processEscalation
 - الـ Algorithms (Sorting + Linear Search)
 
-**عدد Test Cases:** 10-12 test  
-**الوقت المتوقع:** 3-4 ساعات
+**عدد Test Cases:** 11-13 test  
+**الوقت المتوقع:** 2-3 ساعات
 
 **ملاحظة:** اختبار الـ Algorithms مهم جداً
 
@@ -85,7 +84,7 @@
 ### 6️⃣ **عمر** يختبر شغل **نور وائل**
 
 **اللي هيتم اختباره:**
-- BST Functions (7 functions): inorderTraversal, inorderHelper, preorderTraversal, preorderHelper, updateStatus, updateResolvedTime, clearHelper
+- BST Functions (6 functions): inorderTraversal, inorderHelper, preorderTraversal, preorderHelper, updateStatus, updateResolvedTime
 - Main Functions (7 functions): main, displayMainMenu, clearInputBuffer, getValidatedIntInput, getValidatedStringInput, handleViewOperations, runTests
 - HelpDesk Views (3 functions): viewRequest, viewAllRequests, viewAllAgents
 
@@ -98,15 +97,16 @@
 
 | المختبِر (Tester) | اللي بيختبره | عدد Functions | عدد Tests | الوقت |
 |-------------------|--------------|---------------|-----------|-------|
-| **خالد** | عمر | 14 | 12-15 | 2-3h |
-| **نور محمد** | خالد | 14 | 12-15 | 2-3h |
-| **هبه** | نور | 15 | 14-16 | 3-4h |
-| **مريم** | هبه | 15 | 14-16 | 3-4h |
-| **نور وائل** | مريم | 8 | 10-12 | 3-4h |
-| **عمر** | نور وائل | 17 | 14-16 | 2-3h |
+| **خالد** | عمر | 14 | 11-13 | 2-3h |
+| **نور محمد** | خالد | 14 | 11-13 | 2-3h |
+| **هبه** | نور | 15 | 13-15 | 2-3h |
+| **مريم** | هبه | 15 | 13-15 | 3-4h |
+| **نور وائل** | مريم | 13 | 11-13 | 2-3h |
+| **عمر** | نور وائل | 16 | 14-16 | 2-3h |
 
-**متوسط عدد Tests لكل شخص:** ~13 tests  
-**متوسط الوقت:** 2.5-3.5 ساعات  
+**إجمالي**: **87 functions** = **87 test cases**  
+**متوسط عدد Tests لكل شخص:** ~14.5 tests  
+**متوسط الوقت:** 2-3 ساعات  
 **النتيجة:** ⚖️ **متوازن تماماً!**
 
 ---
