@@ -15,7 +15,7 @@
 
 // Constructor - Initialize empty stack
 Stack::Stack() {
-    // TODO: Initialize top to -1 (empty stack)
+    top = -1;
 }
 
 // Destructor
