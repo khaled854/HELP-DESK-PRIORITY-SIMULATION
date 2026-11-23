@@ -80,9 +80,9 @@ HELP-DESK-PRIORITY-SIMULATION/
 | **Omar Mohamed** | 14 | ⭐⭐⭐ Medium | 13-16h |
 | **Khaled Taha** | 14 | ⭐⭐⭐ Medium | 14-17h |
 | **Nour Mohamed** | 15 | ⭐⭐⭐ Medium | 14-17h |
-| **Heba Ragab** | 15 | ⭐⭐⭐⭐ Hard | 15-18h |
-| **Mariam Alaa** | 13 | ⭐⭐⭐⭐ Hard | 15-18h |
-| **Nour Wael** | 16 | ⭐⭐⭐⭐ Med-Hard | 15-18h |
+| **Heba Ragab** | 15 | ⭐⭐⭐ Medium | 15-18h |
+| **Mariam Alaa** | 13 | ⭐⭐⭐ Medium | 15-18h |
+| **Nour Wael** | 16 | ⭐⭐⭐ Medium | 15-18h |
 
 **📖 For complete details, see:** `Documentation/NEW_FAIR_DISTRIBUTION.md`
 

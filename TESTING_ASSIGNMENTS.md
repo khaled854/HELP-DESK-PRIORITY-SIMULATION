@@ -62,9 +62,7 @@
 - BST Functions (8 functions): Destructor, deleteRequest, deleteHelper, findMinNode, findMin, findMax, clearHelper, clear
 
 **عدد Test Cases:** 13-15 test  
-**الوقت المتوقع:** 3-4 ساعات
-
-**ملاحظة:** أصعب تيستينج (BST delete + destructors)
+**الوقت المتوقع:** 2-3 ساعات
 
 ---
 

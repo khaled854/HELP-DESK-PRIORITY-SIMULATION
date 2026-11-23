@@ -149,12 +149,10 @@
 14. `clearHelper()` - Recursive clear (private)
 15. `clear()` - Clear tree (public)
 
-**Difficulty**: ⭐⭐⭐⭐ Hard  
+**Difficulty**: ⭐⭐⭐ Medium  
 **Estimated Time**: 13-15 hours  
 **Testing**: Tests Mariam's work (2-3h)  
 **Total**: **15-18 hours**
-
-**NOTE**: Heba has the HARDEST technical tasks (BST 3-case delete + all destructors)
 
 ---
 
@@ -175,12 +173,10 @@
 12. `assignAgentToRequest()` - Assign agent
 13. `processEscalation()` - Process escalation
 
-**Difficulty**: ⭐⭐⭐⭐ Hard  
+**Difficulty**: ⭐⭐⭐ Medium  
 **Estimated Time**: 13-15 hours  
 **Testing**: Tests own + coordinates integration testing (2-3h)  
 **Total**: **15-18 hours**
-
-**NOTE**: Mariam is INTEGRATION COORDINATOR + implements required algorithms (R6)
 
 ---
 
@@ -208,17 +204,10 @@
 15. `viewAllRequests()` - View all (BST inorder)
 16. `viewAllAgents()` - View agents
 
-**Difficulty**: ⭐⭐⭐⭐ Medium-Hard  
+**Difficulty**: ⭐⭐⭐ Medium  
 **Estimated Time**: 13-15 hours  
 **Testing**: Coordinates test execution + tests others (2-3h)  
 **Total**: **15-18 hours**
-
-**🎉 MAJOR CHANGE**: Nour Wael now has **6 BST functions** including:
-- Recursive traversal algorithms
-- Update operations
-- Plus full menu system and validation (R8 requirement)
-
-This is **meaningful, medium-to-hard implementation work**!
 
 ---
 
@@ -265,9 +254,9 @@ This is **meaningful, medium-to-hard implementation work**!
 - Every member has comparable number of functions
 
 ### 2️⃣ **Difficulty Balance**
-- **Easy-Medium**: Omar, Khaled (basic operations)
-- **Medium**: Nour Mohamed (insert/search)
-- **Hard**: Heba (delete + destructors), Mariam (algorithms + integration), Nour Wael (recursion + validation)
+- **All members**: Medium difficulty
+- Everyone works on a mix of basic and advanced operations
+- Fair distribution of challenging tasks across the team
 
 ### 3️⃣ **No One Overloaded**
 - OLD: Nour Wael had 23-25h (UNFAIR!)

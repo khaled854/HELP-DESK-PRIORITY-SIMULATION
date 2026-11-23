@@ -134,12 +134,10 @@
 14. `clearHelper()` - Recursive clear (private)
 15. `clear()` - Clear tree (public)
 
-**الصعوبة:** ⭐⭐⭐⭐ Hard  
+**الصعوبة:** ⭐⭐⭐ Medium  
 **الوقت:** 13-15 ساعة (implementation)  
-**🧪 Testing:** Tests **Mariam's** work (3-4h)  
-**Total:** 16-19 hours
-
-**ملاحظة:** هبه عندها الـ destructors والـ BST delete (الأصعب) - لذلك تستحق وقت أكثر شوية
+**🧪 Testing:** Tests **Mariam's** work (2-3h)  
+**Total:** 15-18 hours
 
 ---
 
@@ -160,12 +158,10 @@
 12. `HelpDesk::assignAgentToRequest()` - Manual assignment
 13. `HelpDesk::processEscalation()` - Process escalation
 
-**الصعوبة:** ⭐⭐⭐⭐ Hard (Integration + Algorithms)  
+**الصعوبة:** ⭐⭐⭐ Medium  
 **الوقت:** 13-15 ساعة (implementation)  
 **🧪 Testing:** Tests **Heba's** work (2-3h)  
 **Total:** 15-18 hours
-
-**ملاحظة:** مريم coordinator للـ integration + implements required algorithms (R6)
 
 ---
 
@@ -193,12 +189,10 @@
 15. `HelpDesk::viewAllRequests()` - View all (BST inorder)
 16. `HelpDesk::viewAllAgents()` - View agents (LinkedList)
 
-**الصعوبة:** ⭐⭐⭐⭐ Medium-Hard (Recursion + Validation)  
+**الصعوبة:** ⭐⭐⭐ Medium  
 **الوقت:** 13-15 ساعة (implementation)  
 **🧪 Testing:** Tests **Mariam's** work (2-3h)  
 **Total:** 15-18 hours
-
-**ملاحظة:** نور وائل عندها BST recursive functions + كل الـ menu system + validation
 
 ---
 
@@ -209,13 +203,13 @@
 | **عمر محمد** | 14 | 11-13h | 2-3h (Khaled) | **13-16h** |
 | **خالد طه** | 14 | 12-14h | 2-3h (Omar) | **14-17h** |
 | **نور محمد** | 15 | 12-14h | 2-3h (Nour W) | **14-17h** |
-| **هبه رجب** | 15 | 13-15h | 3-4h (Mariam) | **16-19h** |
+| **هبه رجب** | 15 | 13-15h | 2-3h (Mariam) | **15-18h** |
 | **مريم علاء** | 13 | 13-15h | 2-3h (Heba) | **15-18h** |
 | **نور وائل** | 16 | 13-15h | 2-3h (Mariam) | **15-18h** |
 
 **Total**: 14 + 14 + 15 + 15 + 13 + 16 = **87 functions** ✅  
 **Average**: 14.5 functions per member  
-**Time Range**: 13-19 hours (±3h from average of 16h)  
+**Time Range**: 13-18 hours (all members equal difficulty)  
 **Result**: ⚖️ **PERFECTLY BALANCED**
 
 ---
@@ -226,11 +220,10 @@
 - الكل بين 13-16 function
 - الفرق 3 functions بس (أقل من 20%)
 
-### 2️⃣ الصعوبة موزعة بالعدل:
-- **Easy-Medium**: عمر، خالد (basic operations)
-- **Medium**: نور محمد (insert/search)
-- **Hard**: هبه (destructors + delete)، مريم (algorithms + integration)
-- **Medium-Hard**: نور وائل (recursion + validation)
+### 2️⃣ الصعوبة متساوية للجميع:
+- **كل الأعضاء**: Medium difficulty ⭐⭐⭐
+- الكل يشتغل على mix من basic و advanced
+- مفيش حد عنده أصعب من التاني
 
 ### 3️⃣ التخصصات متنوعة:
 - Stack/Queue: عمر + خالد
