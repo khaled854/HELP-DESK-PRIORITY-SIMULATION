@@ -80,9 +80,9 @@ HELP-DESK-PRIORITY-SIMULATION/
 | **Omar Mohamed** | 14 | ⭐⭐⭐ Medium | 13-16h |
 | **Khaled Taha** | 14 | ⭐⭐⭐ Medium | 14-17h |
 | **Nour Mohamed** | 15 | ⭐⭐⭐ Medium | 14-17h |
-| **Heba Ragab** | 15 | ⭐⭐⭐ Medium | 15-18h |
+| **Heba Ragab** | 16 | ⭐⭐⭐ Medium | 15-18h |
 | **Mariam Alaa** | 13 | ⭐⭐⭐ Medium | 15-18h |
-| **Nour Wael** | 16 | ⭐⭐⭐ Medium | 15-18h |
+| **Nour Wael** | 15 | ⭐⭐⭐ Medium | 15-18h |
 
 **📖 For complete details, see:** `Documentation/NEW_FAIR_DISTRIBUTION.md`
 
@@ -93,10 +93,9 @@ HELP-DESK-PRIORITY-SIMULATION/
 **Previous (UNFAIR)**: Nour Wael was assigned ONLY testing (23-25h total)
 
 **NEW (FAIR)**: Nour Wael now implements:
-- ✅ 7 BST functions (traversals, updates, recursive algorithms)
-- ✅ 6 main.cpp functions (UI + validation)
-- ✅ 3 HelpDesk view functions
-- ✅ Total: 16 functions + shared testing = **15-18h** (balanced!)
+- ✅ LinkedList advanced (7 functions - destructors + memory)
+- ✅ BST delete operations (8 functions - 3-case delete)
+- ✅ Total: 15 functions + shared testing = **15-18h** (balanced!)
 
 **Testing is now SHARED by ALL 6 members** - no one overloaded!
 

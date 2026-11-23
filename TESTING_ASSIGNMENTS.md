@@ -19,7 +19,7 @@
 
 ## 📋 التفاصيل الكاملة
 
-### 1️⃣ **خالد** يختبر شغل **عمر**
+### 5️⃣ **خالد** يختبر شغل **عمر**
 
 **اللي هيتم اختباره:**
 - Stack Functions (5 functions): Constructor, push, pop, peek, isEmpty
@@ -31,7 +31,7 @@
 
 ---
 
-### 2️⃣ **نور محمد** يختبر شغل **خالد**
+### 1️⃣ **نور محمد** يختبر شغل **خالد**
 
 **اللي هيتم اختباره:**
 - Stack Functions (5 functions): Destructor, isFull, size, display, clear
@@ -43,7 +43,7 @@
 
 ---
 
-### 3️⃣ **هبه** تختبر شغل **نور محمد**
+### 2️⃣ **هبه** تختبر شغل **نور محمد**
 
 **اللي هيتم اختباره:**
 - LinkedList Functions (7 functions): Constructor, insertAgent, searchAgent, displayAgents, isEmpty, getCount, assignRequest
@@ -55,18 +55,19 @@
 
 ---
 
-### 4️⃣ **مريم** تختبر شغل **هبه**
+### 3️⃣ **مريم** تختبر شغل **هبه**
 
 **اللي هيتم اختباره:**
-- LinkedList Functions (7 functions): Destructor, deleteAgent, updateAgent, unassignRequest, setAvailability, findAvailableAgent, clear
-- BST Functions (8 functions): Destructor, deleteRequest, deleteHelper, findMinNode, findMin, findMax, clearHelper, clear
+- BST Functions (6 functions): inorderTraversal, inorderHelper, preorderTraversal, preorderHelper, updateStatus, updateResolvedTime
+- Main Functions (7 functions): main, displayMainMenu, clearInputBuffer, getValidatedIntInput, getValidatedStringInput, handleViewOperations, runTests
+- HelpDesk Views (3 functions): viewRequest, viewAllRequests, viewAllAgents
 
-**عدد Test Cases:** 13-15 test  
+**عدد Test Cases:** 14-16 test  
 **الوقت المتوقع:** 2-3 ساعات
 
 ---
 
-### 5️⃣ **نور وائل** يختبر شغل **مريم**
+### 4️⃣ **نور وائل** يختبر شغل **مريم**
 
 **اللي هيتم اختباره:**
 - HelpDesk Functions (13 functions): Constructor, Destructor, getCurrentTimestamp, getNextRequestId, displayStatistics, sortRequestsByPriority, linearSearchAgent, addAgent, removeAgent, viewPendingRequests, searchRequestById, assignAgentToRequest, processEscalation

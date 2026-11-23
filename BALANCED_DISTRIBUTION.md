@@ -108,31 +108,34 @@
 
 **الصعوبة:** ⭐⭐⭐ Medium  
 **الوقت:** 12-14 ساعة (implementation)  
-**🧪 Testing:** Tests **Nour Wael's** work (2-3h)  
+**🧪 Testing:** Tests **Heba's** work (2-3h)  
 **Total:** 14-17 hours
 
 ---
 
-### 👤 Member 4: هبه رجب (15 functions)
+### 👤 Member 4: هبه رجب (16 functions)
 
-#### LinkedList - Part 2 (7 functions):
-1. `~LinkedList()` - Destructor ⚠️ (Memory management!)
-2. `deleteAgent()` - Remove agent
-3. `updateAgent()` - Update info
-4. `unassignRequest()` - Unassign from agent
-5. `setAvailability()` - Set status
-6. `findAvailableAgent()` - Find available
-7. `clear()` - Clear all
+#### BST - Traversals & Updates (6 functions):
+1. `inorderTraversal()` - Inorder (public)
+2. `inorderHelper()` - Recursive inorder (private)
+3. `preorderTraversal()` - Preorder (public)
+4. `preorderHelper()` - Recursive preorder (private)
+5. `updateStatus()` - Update request status
+6. `updateResolvedTime()` - Update time
 
-#### BST - Part 2 (8 functions):
-8. `~BST()` - Destructor
-9. `deleteRequest()` - Delete request (public)
-10. `deleteHelper()` - Recursive delete ⚠️ (3 cases - الأصعب!)
-11. `findMinNode()` - Find minimum in subtree
-12. `findMin()` - Find minimum (public)
-13. `findMax()` - Find maximum
-14. `clearHelper()` - Recursive clear (private)
-15. `clear()` - Clear tree (public)
+#### Main Menu System (7 functions):
+7. `main()` - Main program loop
+8. `displayMainMenu()` - Main menu
+9. `clearInputBuffer()` - Clear buffer
+10. `getValidatedIntInput()` - Int validation (R8 requirement)
+11. `getValidatedStringInput()` - String validation (R8 requirement)
+12. `handleViewOperations()` - View menu
+13. `runTests()` - **Complete Test Suite** (R10 requirement)
+
+#### HelpDesk View Functions (3 functions):
+14. `HelpDesk::viewRequest()` - View single request
+15. `HelpDesk::viewAllRequests()` - View all (BST inorder)
+16. `HelpDesk::viewAllAgents()` - View agents (LinkedList)
 
 **الصعوبة:** ⭐⭐⭐ Medium  
 **الوقت:** 13-15 ساعة (implementation)  
@@ -201,13 +204,13 @@
 | العضو | Functions | Implementation | Testing | **Total Hours** |
 |------|-----------|----------------|---------|-----------------|
 | **عمر محمد** | 14 | 11-13h | 2-3h (Khaled) | **13-16h** |
-| **خالد طه** | 14 | 12-14h | 2-3h (Omar) | **14-17h** |
-| **نور محمد** | 15 | 12-14h | 2-3h (Nour W) | **14-17h** |
-| **هبه رجب** | 15 | 13-15h | 2-3h (Mariam) | **15-18h** |
-| **مريم علاء** | 13 | 13-15h | 2-3h (Heba) | **15-18h** |
-| **نور وائل** | 16 | 13-15h | 2-3h (Mariam) | **15-18h** |
+| **خالد طه** | 14 | 12-14h | 2-3h (Nour M) | **14-17h** |
+| **نور محمد** | 15 | 12-14h | 2-3h (Heba) | **14-17h** |
+| **هبه رجب** | 16 | 13-15h | 2-3h (Mariam) | **15-18h** |
+| **مريم علاء** | 13 | 13-15h | 2-3h (Nour W) | **15-18h** |
+| **نور وائل** | 15 | 13-15h | 2-3h (Omar) | **15-18h** |
 
-**Total**: 14 + 14 + 15 + 15 + 13 + 16 = **87 functions** ✅  
+**Total**: 14 + 14 + 15 + 16 + 13 + 15 = **87 functions** ✅  
 **Average**: 14.5 functions per member  
 **Time Range**: 13-18 hours (all members equal difficulty)  
 **Result**: ⚖️ **PERFECTLY BALANCED**

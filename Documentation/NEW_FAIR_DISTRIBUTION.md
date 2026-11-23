@@ -128,26 +128,29 @@
 
 ---
 
-## 📋 SECTION 4: هبه رجب (Heba Ragab) - 15 Functions
+## 📋 SECTION 4: هبه رجب (Heba Ragab) - 16 Functions
 
-### **LinkedList (7 functions)** - Advanced + Memory Management
-1. `~LinkedList()` - Destructor ⚠️ (MEMORY!)
-2. `deleteAgent()` - Remove agent
-3. `updateAgent()` - Update info
-4. `unassignRequest()` - Decrement counter
-5. `setAvailability()` - Set status
-6. `findAvailableAgent()` - Find available
-7. `clear()` - Clear all ⚠️ (MEMORY!)
+### **BST (6 functions)** - Traversals + Updates
+1. `inorderTraversal()` - Inorder (public)
+2. `inorderHelper()` - Recursive inorder (private)
+3. `preorderTraversal()` - Preorder (public)
+4. `preorderHelper()` - Recursive preorder (private)
+5. `updateStatus()` - Update request status
+6. `updateResolvedTime()` - Update time
 
-### **BST (8 functions)** - Advanced + Delete (HARDEST!)
-8. `~BST()` - Destructor ⚠️ (MEMORY!)
-9. `deleteRequest()` - Delete request (public)
-10. `deleteHelper()` - **3 CASES DELETE** ⚠️ (MOST COMPLEX!)
-11. `findMinNode()` - Find minimum in subtree
-12. `findMin()` - Find minimum (public)
-13. `findMax()` - Find maximum
-14. `clearHelper()` - Recursive clear (private)
-15. `clear()` - Clear tree (public)
+### **Main Menu System (7 functions)**
+7. `main()` - Main program loop
+8. `displayMainMenu()` - Main menu
+9. `clearInputBuffer()` - Clear buffer
+10. `getValidatedIntInput()` - **INT VALIDATION** (R8)
+11. `getValidatedStringInput()` - **STRING VALIDATION** (R8)
+12. `handleViewOperations()` - View submenu
+13. `runTests()` - **TEST COORDINATOR** (all 6 contribute)
+
+### **HelpDesk Integration (3 functions)**
+14. `viewRequest()` - View single request
+15. `viewAllRequests()` - View all (BST inorder)
+16. `viewAllAgents()` - View agents
 
 **Difficulty**: ⭐⭐⭐ Medium  
 **Estimated Time**: 13-15 hours  
@@ -180,29 +183,26 @@
 
 ---
 
-## 📋 SECTION 6: نور وائل (Nour Wael) - 16 Functions
+## 📋 SECTION 6: نور وائل (Nour Wael) - 15 Functions
 
-### **🆕 BST (6 functions)** - Traversals + Updates
-1. `inorderTraversal()` - Inorder (public)
-2. `inorderHelper()` - Recursive inorder (private) ⚠️
-3. `preorderTraversal()` - Preorder (public)
-4. `preorderHelper()` - Recursive preorder (private) ⚠️
-5. `updateStatus()` - Update request status
-6. `updateResolvedTime()` - Update time
+### **LinkedList (7 functions)** - Advanced + Memory Management
+1. `~LinkedList()` - Destructor
+2. `deleteAgent()` - Remove agent
+3. `updateAgent()` - Update info
+4. `unassignRequest()` - Decrement counter
+5. `setAvailability()` - Set status
+6. `findAvailableAgent()` - Find available
+7. `clear()` - Clear all
 
-### **Main Menu System (7 functions)**
-7. `main()` - Main program loop
-8. `displayMainMenu()` - Main menu
-9. `clearInputBuffer()` - Clear buffer
-10. `getValidatedIntInput()` - **INT VALIDATION** ⚠️ (R8)
-11. `getValidatedStringInput()` - **STRING VALIDATION** ⚠️ (R8)
-12. `handleViewOperations()` - View submenu
-13. `runTests()` - **TEST COORDINATOR** (all 6 contribute)
-
-### **HelpDesk Integration (3 functions)**
-14. `viewRequest()` - View single request
-15. `viewAllRequests()` - View all (BST inorder)
-16. `viewAllAgents()` - View agents
+### **BST (8 functions)** - Advanced Operations
+8. `~BST()` - Destructor
+9. `deleteRequest()` - Delete request (public)
+10. `deleteHelper()` - Delete with 3 cases (private)
+11. `findMinNode()` - Find minimum in subtree
+12. `findMin()` - Find minimum (public)
+13. `findMax()` - Find maximum
+14. `clearHelper()` - Recursive clear (private)
+15. `clear()` - Clear tree (public)
 
 **Difficulty**: ⭐⭐⭐ Medium  
 **Estimated Time**: 13-15 hours  
@@ -218,9 +218,9 @@
 | **Omar** | 5 | 5 | 0 | 0 | 3 | 1 | **14** | 13-16h |
 | **Khaled** | 5 | 6 | 0 | 0 | 2 | 1 | **14** | 14-17h |
 | **Nour M** | 0 | 0 | 7 | 7 | 0 | 1 | **15** | 14-17h |
-| **Heba** | 0 | 0 | 7 | 8 | 0 | 0 | **15** | 15-18h |
+| **Heba** | 0 | 0 | 0 | **6** | 3 | 7 | **16** | 15-18h |
 | **Mariam** | 0 | 0 | 0 | 0 | 13 | 0 | **13** | 15-18h |
-| **Nour W** | 0 | 0 | 0 | **6** | 3 | 7 | **16** | 15-18h |
+| **Nour W** | 0 | 0 | 7 | **8** | 0 | 0 | **15** | 15-18h |
 
 **Total**: 10 + 11 + 14 + 21 + 21 + 10 = **87 functions**  
 **Average**: 14.5 functions per member  
@@ -235,12 +235,12 @@
 
 | Member | Implements | Tests Who | Test Cases | Test Hours |
 |--------|------------|-----------|------------|------------|
-| Omar | Stack 1-5 + Queue 1-5 + Integration | Tests Khaled | 12 cases | 2-3h |
-| Khaled | Stack 6-10 + Queue 6-11 + Integration | Tests Omar | 12 cases | 2-3h |
-| Nour M | LinkedList 1-7 + BST 1-7 + Integration | Tests Nour W | 14 cases | 2-3h |
-| Heba | LinkedList 8-14 + BST 8-14 + Integration | Tests Mariam | 14 cases | 2-3h |
-| Mariam | HelpDesk + Algorithms | Tests own + integration | 10 cases | 2-3h |
-| Nour W | BST 15-21 + main.cpp + HelpDesk views | Coordinates testing | 12 cases | 2-3h |
+| Omar | Stack 1-5 + Queue 1-5 + Integration | Tests Khaled | 14 functions | 2-3h |
+| Khaled | Stack 6-10 + Queue 6-11 + Integration | Tests Nour M | 14 functions | 2-3h |
+| Nour M | LinkedList 1-7 + BST 1-7 + Integration | Tests Heba | 15 functions | 2-3h |
+| Heba | BST 15-20 + main.cpp + HelpDesk views | Tests Mariam | 16 functions | 2-3h |
+| Mariam | HelpDesk + Algorithms | Tests Nour W | 13 functions | 2-3h |
+| Nour W | LinkedList 8-14 + BST 8-14 | Tests Omar | 15 functions | 2-3h |
 
 **Total Test Cases**: 74 tests ÷ 6 members = ~12 tests each  
 **Result**: **PERFECTLY BALANCED TESTING!**
